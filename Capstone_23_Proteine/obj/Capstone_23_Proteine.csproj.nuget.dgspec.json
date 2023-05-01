@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ritik\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj": {}
+    "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ritik\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj": {
+    "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ritik\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj",
+        "projectUniqueName": "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj",
         "projectName": "Capstone_23_Proteine",
-        "projectPath": "C:\\Users\\Ritik\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj",
-        "packagesPath": "C:\\Users\\Ritik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ritik\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\obj\\",
+        "projectPath": "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj",
+        "packagesPath": "C:\\Users\\nzbob\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ritik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nzbob\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -51,19 +51,25 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[6.0.15, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[6.0.15, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[6.0.15, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.10, )"
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.13, )"
             }
           },
           "imports": [
@@ -85,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
