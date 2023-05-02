@@ -16,3 +16,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.aboutmealign {
+    margin-left: 360px;
+    text-align: left;
+}
