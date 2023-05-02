@@ -2,6 +2,64 @@
     ViewData["Title"] = "AboutMe";
 }
 
-<div>
-    <h1>this is the header for the about me page </h1>
+<div class="text-center">
+
+    <h1>About Me</h1>
+</div>
+<div class="aboutmealign">
+    <p>
+
+        <form action="/action_page.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+        </form>
+
+        <label for="Gender">Pick your Gender:</label>
+        <select name="Gender" id="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br><br>
+
+        <form action="/action_page.php">
+            <label for="height">Height in CM:</label>
+            <input type="number" id="height" name="height"><br><br>
+        </form>
+
+        <form action="/action_page.php">
+            <label for="weight">Weight in KG:</label>
+            <input type="number" id="weight" name="Weight"><br><br>
+        </form>
+        <form action="/action_page.php">
+            <label for="Age">Age:</label>
+            <input type="date" id="Age" name="Age">
+        </form><br>
+
+        <label for="dietary-options">Dietary Options:</label>
+        <select name="dietary-options" id="dietary-options">
+            <option value="vegetarian">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="gluten-free">Gluten-Free</option>
+            <option value="dairy-free">Dairy-Free</option>
+            <option value="kosher">Kosher</option>
+            <option value="halal">Halal</option>
+            <option value="pescatarian">Pescatarian</option>
+            <option value="low-carb">Low-Carb</option>
+            <option value="low-fat">Low-Fat</option>
+            <option value="organic">Organic</option>
+            <option value="raw">Raw</option>
+            <option value="sugar-free">Sugar-Free</option>
+        </select><br><br>
+
+
+        <label for="Activity">User Activity:</label>
+        <select name="Activity" id="Activity">
+            <option value="Regular Active">Regular Active</option>
+            <option value="Medium Active">Medium Active</option>
+            <option value="Not Active">Not Active</option>
+        </select><br><br>
+
+
+    </p>
 </div>
