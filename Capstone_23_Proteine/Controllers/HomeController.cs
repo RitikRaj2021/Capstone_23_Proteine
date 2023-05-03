@@ -12,6 +12,10 @@ namespace Capstone_23_Proteine.Controllers
         {
             _logger = logger;
         }
+        public IActionResult Landing()
+        {
+            return View();
+        }
 
         public IActionResult Index()
         {
