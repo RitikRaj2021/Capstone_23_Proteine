@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "z2QTdEf2N1g3TB6ae7Oth+WPNeY3VoUOvqcZ930p8rw=",
+  "Hash": "OLrli4zPGAv2QZXPk8Gpyd5I1GyhiZnyt78+cChxlZ8=",
   "Source": "Capstone_23_Proteine",
   "BasePath": "_content/Capstone_23_Proteine",
   "Mode": "Default",
@@ -1103,6 +1103,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\ProteineLogo.png",
+      "SourceId": "Capstone_23_Proteine",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\",
+      "BasePath": "_content/Capstone_23_Proteine",
+      "RelativePath": "Image/ProteineLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\ProteineLogo.png"
+    },
+    {
+      "Identity": "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\ProteineLogo_lessBlack.png",
+      "SourceId": "Capstone_23_Proteine",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\",
+      "BasePath": "_content/Capstone_23_Proteine",
+      "RelativePath": "Image/ProteineLogo_lessBlack.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\ProteineLogo_lessBlack.png"
     },
     {
       "Identity": "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\js\\site.js",

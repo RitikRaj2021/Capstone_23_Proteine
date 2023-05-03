@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\Capstone_23_Proteine.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\ProteineLogo.png",
+      "PackagePath": "staticwebassets\\Image\\ProteineLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\ProteineLogo_lessBlack.png",
+      "PackagePath": "staticwebassets\\Image\\ProteineLogo_lessBlack.png"
+    },
+    {
       "Id": "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
