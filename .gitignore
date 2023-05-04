@@ -77,8 +77,10 @@ Capstone_23_Proteine/wwwroot/css/site.css
 *.json
 *.json
 !appsettings.json
+!launchSettings.json
 *.props
 *.targets
 *.cache
 *.txt
+!ScaffoldingReadMe.txt
 *.v2
