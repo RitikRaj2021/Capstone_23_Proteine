@@ -46,3 +46,12 @@ _ReSharper*/
 ~$*
 
 Capstone_23_Proteine/obj/Debug/net6.0/Capstone_23_Proteine.GeneratedMSBuildEditorConfig.editorconfig
+Capstone_23_Proteine/.vs/Capstone_23_Proteine/v17/.suo
+*.dll
+*.pdb
+*.json
+*.json
+*.props
+*.targets
+*.cache
+*.txt

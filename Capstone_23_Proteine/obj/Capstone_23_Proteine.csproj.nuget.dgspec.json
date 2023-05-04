@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj": {}
+    "C:\\Users\\test\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj": {
+    "C:\\Users\\test\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj",
+        "projectUniqueName": "C:\\Users\\test\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj",
         "projectName": "Capstone_23_Proteine",
-        "projectPath": "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj",
-        "packagesPath": "C:\\Users\\nzbob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\obj\\",
+        "projectPath": "C:\\Users\\test\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj",
+        "packagesPath": "C:\\Users\\test\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\test\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nzbob\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\test\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -56,10 +56,6 @@
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
               "version": "[6.0.15, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
