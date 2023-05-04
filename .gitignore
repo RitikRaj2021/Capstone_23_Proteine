@@ -76,6 +76,7 @@ Capstone_23_Proteine/wwwroot/css/site.css
 *.pdb
 *.json
 *.json
+!appsettings.json
 *.props
 *.targets
 *.cache
