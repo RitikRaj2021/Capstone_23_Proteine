@@ -9,5 +9,7 @@ namespace CapstoneTest2.Data
             : base(options)
         {
         }
+
+        
     }
 }
