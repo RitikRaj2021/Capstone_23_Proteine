@@ -5,12 +5,36 @@
       "PackagePath": "staticwebassets\\Capstone_23_Proteine.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\harra\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\Cereal.png",
+      "PackagePath": "staticwebassets\\Image\\Cereal.png"
+    },
+    {
+      "Id": "C:\\Users\\harra\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\Chicken.png",
+      "PackagePath": "staticwebassets\\Image\\Chicken.png"
+    },
+    {
+      "Id": "C:\\Users\\harra\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\FruitBowl.png",
+      "PackagePath": "staticwebassets\\Image\\FruitBowl.png"
+    },
+    {
+      "Id": "C:\\Users\\harra\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\Infographicfood.png",
+      "PackagePath": "staticwebassets\\Image\\Infographicfood.png"
+    },
+    {
       "Id": "C:\\Users\\harra\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\ProteineLogo.png",
       "PackagePath": "staticwebassets\\Image\\ProteineLogo.png"
     },
     {
       "Id": "C:\\Users\\harra\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\ProteineLogo_lessBlack.png",
       "PackagePath": "staticwebassets\\Image\\ProteineLogo_lessBlack.png"
+    },
+    {
+      "Id": "C:\\Users\\harra\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\VegMeal.png",
+      "PackagePath": "staticwebassets\\Image\\VegMeal.png"
+    },
+    {
+      "Id": "C:\\Users\\harra\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\anotherinfo.png",
+      "PackagePath": "staticwebassets\\Image\\anotherinfo.png"
     },
     {
       "Id": "C:\\Users\\harra\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\css\\site.css",
