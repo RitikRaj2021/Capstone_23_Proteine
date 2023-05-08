@@ -10951,23 +10951,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nzbob\\.nuget\\packages\\": {},
+    "C:\\Users\\harra\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj",
+      "projectUniqueName": "C:\\Users\\harra\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj",
       "projectName": "Capstone_23_Proteine",
-      "projectPath": "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj",
-      "packagesPath": "C:\\Users\\nzbob\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nzbob\\OneDrive\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\obj\\",
+      "projectPath": "C:\\Users\\harra\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj",
+      "packagesPath": "C:\\Users\\harra\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\harra\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\nzbob\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\harra\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10976,7 +10976,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
