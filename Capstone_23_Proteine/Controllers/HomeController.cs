@@ -32,6 +32,10 @@ namespace Capstone_23_Proteine.Controllers
         {
             return View();
         }
+        public IActionResult MyDetails()
+        {
+            return View();
+        }
 
         public IActionResult MyRecords()
         {
