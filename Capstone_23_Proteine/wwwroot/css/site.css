@@ -18,8 +18,8 @@ body {
 }
 
 .aboutmealign {
-    margin-left: 360px;
-    text-align: left;
+    margin-right: 300px;
+    margin-left: 300px;
 }
 
 .layoutalign {
@@ -29,4 +29,7 @@ body {
 }
 .buttonsize {
     font-size: 25px;
+}
+.buttonmiddle {
+
 }
