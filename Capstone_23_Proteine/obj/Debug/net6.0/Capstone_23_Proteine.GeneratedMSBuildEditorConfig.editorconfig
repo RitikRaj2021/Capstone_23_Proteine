@@ -44,8 +44,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nzbob/OneDrive/Documents/GitHub/Capstone_23_Proteine/Capstone_23_Proteine/Views/Home/AboutMe.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dE1lLmNzaHRtbA==
+[C:/Users/nzbob/OneDrive/Documents/GitHub/Capstone_23_Proteine/Capstone_23_Proteine/Views/AboutMe/AboutMe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRNZVxBYm91dE1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nzbob/OneDrive/Documents/GitHub/Capstone_23_Proteine/Capstone_23_Proteine/Views/Home/AboutMeold.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dE1lb2xkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nzbob/OneDrive/Documents/GitHub/Capstone_23_Proteine/Capstone_23_Proteine/Views/Home/Index.cshtml]
