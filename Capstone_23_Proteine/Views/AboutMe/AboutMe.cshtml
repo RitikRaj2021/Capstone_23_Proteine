@@ -10,7 +10,7 @@
 
     <h1>About Me</h1>
 </div>
-
+<!--this is for the users name-->
 <form method="post" action="AboutMe">
     <div class="aboutmealign , text-left">
     <div>
@@ -19,6 +19,7 @@
         <label for="">Last name:</label>
         <input type="text" class="form-control" asp-for="LastName"><br>
     </div>
+    <!--This is for the users gender-->
     <div>
         <label for="">Select your Gender:</label>
         <select name="Gender" type="text" class="form-control" asp-for="Gender">
@@ -27,21 +28,23 @@
         </select><br>
     </div>
 
+    <!--This is for the users height-->
     <div>
         <label for="">Height in CM:</label>
         <input type="number" class="form-control" asp-for="Height"><br>
     </div>
-
+    <!--This is for the users weight-->
     <div>
         <label for="weight">Weight in KG:</label>
         <input type="number" class="form-control" asp-for="Weight"><br>
     </div>
+    <!--This is for the users date of birth-->
     <div>
         <label for="">Date Of Birth:</label>
         <input type="date" class="form-control" asp-for="DateOfBirth"><br>
     </div>
+    <!--This is for the users Dietary Options-->
     <div>
-
     <label for="">Dietary Options:</label>
         <select name="DietaryOptions" type="text" class="form-control" asp-for="DietaryOptions">
             <option value="n/a">n/a</option>
@@ -59,6 +62,7 @@
             <option value="sugar-free">Sugar-Free</option>
         </select><br>
     </div>
+    <!--This is for the users activity-->
     <div>
         <label for="">User Activity:</label>
         <select name="UserActivity" type="text" class="form-control" asp-for="UserActivity">
@@ -67,6 +71,7 @@
             <option value="Not Active">Not Active</option>
         </select><br>
     </div>
+    <!--This is for the submit button-->
     </div>
         <div class="aboutmealign">
     <button style="width: 150px; margin-left: 280px; background-color: green; border-color: green;" type="submit" class="btn btn-primary">Submit</button>
