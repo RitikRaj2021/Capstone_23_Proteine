@@ -1,5 +1,6 @@
 ﻿using Capstone_23_Proteine.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor.Compilation;
 using System.Diagnostics;
 
 namespace Capstone_23_Proteine.Controllers
