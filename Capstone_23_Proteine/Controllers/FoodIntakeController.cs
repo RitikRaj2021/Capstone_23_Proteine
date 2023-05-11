@@ -2,6 +2,7 @@
 using Capstone_23_Proteine.Models;
 using Capstone_23_Proteine.Data;
 using Capstone_23_Proteine.Models.Domain;
+using Microsoft.EntityFrameworkCore;
 
 namespace Capstone_23_Proteine.Controllers
 {
@@ -15,6 +16,13 @@ namespace Capstone_23_Proteine.Controllers
         }
 
         [HttpGet]
+
+        public async Task<IActionResult> MyRecords()
+        {
+            var foodintake = await applicationDbContext.FoodIntake.ToListAsync();
+            return View(foodintake);
+        }
+
         public IActionResult FoodIntake()
         {
             return View();
@@ -36,7 +44,7 @@ namespace Capstone_23_Proteine.Controllers
 
             await applicationDbContext.FoodIntake.AddAsync(foodIntake);
             await applicationDbContext.SaveChangesAsync();
-            return RedirectToAction("FoodIntake");
+            return RedirectToAction("MyRecords");
 
         }
     }
