@@ -52,6 +52,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZEludGFrZVxGb29kSW50YWtlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/test/Documents/GitHub/Capstone_23_Proteine/Capstone_23_Proteine/Views/FoodIntake/MyRecords.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZEludGFrZVxNeVJlY29yZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/test/Documents/GitHub/Capstone_23_Proteine/Capstone_23_Proteine/Views/Home/AboutMeold.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dE1lb2xkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -68,8 +72,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNeURldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/test/Documents/GitHub/Capstone_23_Proteine/Capstone_23_Proteine/Views/Home/MyRecords.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNeVJlY29yZHMuY3NodG1s
+[C:/Users/test/Documents/GitHub/Capstone_23_Proteine/Capstone_23_Proteine/Views/Home/MyRecordsold.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNeVJlY29yZHNvbGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/test/Documents/GitHub/Capstone_23_Proteine/Capstone_23_Proteine/Views/Home/Privacy.cshtml]
