@@ -10951,23 +10951,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\harra\\.nuget\\packages\\": {},
+    "C:\\Users\\Ritik Local Admin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\harra\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj",
+      "projectUniqueName": "E:\\ProjectWork\\Capstone2023\\newCapstone\\New folder (2)\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj",
       "projectName": "Capstone_23_Proteine",
-      "projectPath": "C:\\Users\\harra\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj",
-      "packagesPath": "C:\\Users\\harra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\harra\\Documents\\GitHub\\Capstone_23_Proteine\\Capstone_23_Proteine\\obj\\",
+      "projectPath": "E:\\ProjectWork\\Capstone2023\\newCapstone\\New folder (2)\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj",
+      "packagesPath": "C:\\Users\\Ritik Local Admin\\.nuget\\packages\\",
+      "outputPath": "E:\\ProjectWork\\Capstone2023\\newCapstone\\New folder (2)\\Capstone_23_Proteine\\Capstone_23_Proteine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\harra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ritik Local Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10976,6 +10976,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11032,6 +11033,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.14, 6.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.14, 6.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.14, 6.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.14, 6.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -11040,7 +11059,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
