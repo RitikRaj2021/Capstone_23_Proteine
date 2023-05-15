@@ -100,8 +100,6 @@ namespace Capstone_23_Proteine.Areas.Identity.Pages.Account
         }
 
 
-
-
         public async Task OnGetAsync(string returnUrl = null)
         {
             ReturnUrl = returnUrl;
