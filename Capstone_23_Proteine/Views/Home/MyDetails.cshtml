@@ -3,7 +3,8 @@
 }
 
 <div class="text-center">
-
+    <!--the tags below are headers for the options that the user chose in the "About Me" page,
+    the information will be imported next to these headers for the user to view-->
     <h1>My Details</h1>
 </div>
 <div class="aboutmealign">
@@ -17,13 +18,14 @@
     <p>Dietary Option: </p>
     <p>Activity: </p>
 
+    <!--this is the code for the edit button, this leads the user to the about me page where they can update their profile-->
     <script>
-        function openWin() {
-            window.open("AboutMe");
+        function openWins() {
+            window.open("../AboutMe/AboutMe");
         }
     </script>
 
         <form>
-            <input type="button" value="Edit" onclick="openWin()">
+            <input type="button" value="Edit" onclick="openWins()">
         </form>
 </div>
