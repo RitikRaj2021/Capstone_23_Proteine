@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Capstone_23_Proteine.Data.Migrations;
+using Capstone_23_Proteine.Models.Domain;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Capstone_23_Proteine.Data
@@ -9,5 +11,8 @@ namespace Capstone_23_Proteine.Data
             : base(options)
         {
         }
+
+        public DbSet<AboutMe> AboutMe { get; set; }
+        public DbSet<FoodIntake> FoodIntake { get; set; }
     }
 }

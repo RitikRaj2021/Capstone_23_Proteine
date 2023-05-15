@@ -18,6 +18,15 @@ body {
 }
 
 .aboutmealign {
-    margin-left: 360px;
-    text-align: left;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+.layoutalign {
+    margin-top: 120px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.buttonsize {
+    font-size: 25px;
 }

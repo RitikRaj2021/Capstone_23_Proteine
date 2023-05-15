@@ -1,5 +1,6 @@
 ﻿using Capstone_23_Proteine.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Razor.Compilation;
 using System.Diagnostics;
 
 namespace Capstone_23_Proteine.Controllers
@@ -13,6 +14,11 @@ namespace Capstone_23_Proteine.Controllers
             _logger = logger;
         }
 
+        public IActionResult Landing()
+        {
+            return View();
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -24,6 +30,10 @@ namespace Capstone_23_Proteine.Controllers
         }
 
         public IActionResult AboutMe()
+        {
+            return View();
+        }
+        public IActionResult MyDetails()
         {
             return View();
         }

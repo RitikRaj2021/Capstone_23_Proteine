@@ -1,0 +1,110 @@
+﻿@{
+    ViewData["Title"] = "Landing";
+}
+
+<div>
+    <!--Here is a sliddeshow full of pictures of the foods that may be recommended to users-->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/Image/Cereal.png" class="d-block w-100" width="600" height="600" alt="~/Image/Cereal.png">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Image/Chicken.png" class="d-block w-100" width="600" height="600" alt="~/Image/Chicken.png">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Image/FruitBowl.png" class="d-block w-100" width="600" height="600" alt="~/Image/FruitBowl.png">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Image/VegMeal.png" class="d-block w-100" width="600" height="600" alt="~/Image/VegMeal.png">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Image/anotherinfo.png" class="d-block w-100" width="600" height="600" alt="~/Image/anotherinfo.png">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--This is a simple image next to some text, will be changed later on -->
+
+        <div class="clearfix" style="padding: 30px;">
+            <img src="~/Image/anotherinfo.png" class="col-md-6 float-md-end mb-3 ms-md-3" width="200" height="250" alt="~/Image/ProteineLogo.png">
+       
+
+            <h2>
+                Stay Motivated.
+            </h2>
+            <p>
+                Join the World’s best Fitness Community for advice and tips.
+            </p>
+
+        </div>
+
+    <!--This is a simple image next to some text, will be changed later on -->
+
+        <div class="clearfix" style="padding: 30px;">
+
+            <img style="padding-right: 30px;" src="~/Image/Chicken.png" class="col-md-6 float-md-start mb-3 ms-md-3" width="200" height="250" alt="~/Image/Chicken.png">
+            
+                <div style="text-align: right;">
+                <h2>
+                Logging Simplified.
+                </h2>
+                </div>
+           
+            <p>
+                <div style="text-align: right; margin-left: 350px;">
+                Save meals and use Quick Tools for fast and easy food tracking.
+                </div>
+            </p>
+         
+        </div>
+        <!--This is a simple image next to some text, will be changed later on -->
+        <div class="clearfix" style="padding: 30px;">
+            <img src="~/Image/FruitBowl.png" class="col-md-6 float-md-end mb-3 ms-md-3" width="200" height="250" alt="~/Image/FruitBowl.png">
+
+            <h2>
+                Learn Track Improve
+            </h2>
+
+            <p >
+                Keeping a food diary helps you understand your habits and increases your likelihood of hitting your goals.
+            </p>
+        </div>
+
+
+    <!-- here is a card group for the landing page where there is information on each picture-->
+    <div class="card-group">
+        <div class="card" style="border-color:transparent;">
+            <img class="card-img-top" src="~/Image/FruitBowl.png" alt="Fruit bowl">
+            <div class="card-body">
+                <h5 class="card-title">Fruit Bowl</h5>
+                <p class="card-text">The Fruit bowl is good for a low calorie meal</p>
+            </div>
+        </div>
+        <div class="card" style="border-color:transparent; padding-left: 30px; padding-right: 30px;">
+            <img class="card-img-top" src="~/Image/Chicken.png" alt="Chicken">
+            <div class="card-body">
+                <h5 class="card-title">Chicken Salad</h5>
+                <p class="card-text">This chicken salad is a good meal for consistent protien intake.</p>
+                
+            </div>
+        </div>
+        <div class="card" style="border-color:transparent;">
+            <img class="card-img-top" src="~/Image/VegMeal.png" alt="veg meal">
+            <div class="card-body">
+                <h5 class="card-title">Veg Meal</h5>
+                <p class="card-text">This Veg meal is a good meal for losing weight but also maintaining a good muscle mass.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+

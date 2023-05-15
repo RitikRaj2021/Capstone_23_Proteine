@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "MyDetails";
+}
+
+<div class="text-center">
+    <!--the tags below are headers for the options that the user chose in the "About Me" page,
+    the information will be imported next to these headers for the user to view-->
+    <h1>My Details</h1>
+</div>
+<div class="aboutmealign">
+    <p>
+
+    <p>Full name:</p>
+    <p>Gender: </p>
+    <p>Height: </p>
+    <p>Weight: </p>
+    <p>Date Of Brith:</p>
+    <p>Dietary Option: </p>
+    <p>Activity: </p>
+
+    <!--this is the code for the edit button, this leads the user to the about me page where they can update their profile-->
+    <script>
+        function openWins() {
+            window.open("../AboutMe/AboutMe");
+        }
+    </script>
+
+        <form>
+            <input type="button" value="Edit" onclick="openWins()">
+        </form>
+</div>
