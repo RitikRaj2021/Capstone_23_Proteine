@@ -30,3 +30,8 @@ body {
 .buttonsize {
     font-size: 25px;
 }
+
+.navbar{
+   margin-top: -10px;
+    margin-bottom:30px;
+}
