@@ -14,7 +14,9 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+   background-color: #F7F4E9;
+   /* background-color: #FAF0DC;*/
 }
 
 .aboutmealign {
@@ -29,4 +31,8 @@ body {
 }
 .buttonsize {
     font-size: 25px;
+}
+
+h1 {
+    color: #8DA242;
 }

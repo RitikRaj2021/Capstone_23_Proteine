@@ -37,6 +37,18 @@
       "PackagePath": "staticwebassets\\Image\\anotherinfo.png"
     },
     {
+      "Id": "E:\\ProjectWork\\Capstone2023\\newCapstone\\New folder (2)\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\book.png",
+      "PackagePath": "staticwebassets\\Image\\book.png"
+    },
+    {
+      "Id": "E:\\ProjectWork\\Capstone2023\\newCapstone\\New folder (2)\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\logging.png",
+      "PackagePath": "staticwebassets\\Image\\logging.png"
+    },
+    {
+      "Id": "E:\\ProjectWork\\Capstone2023\\newCapstone\\New folder (2)\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\shoe.png",
+      "PackagePath": "staticwebassets\\Image\\shoe.png"
+    },
+    {
       "Id": "E:\\ProjectWork\\Capstone2023\\newCapstone\\New folder (2)\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
