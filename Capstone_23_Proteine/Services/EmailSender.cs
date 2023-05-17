@@ -7,6 +7,8 @@ namespace Capstone_23_Proteine.Services
 {
     public class EmailSender
     {
+
+
         public async Task SendEmail(string subject, string email, string message)
         {
             var apiKey = "";
@@ -17,7 +19,7 @@ namespace Capstone_23_Proteine.Services
             var htmlContent = "";
             var msg = MailHelper.CreateSingleEmail(from, to, subject, plaintextContent, htmlContent);
             var response = await client.SendEmailAsync(msg);
-
+            
         }
     }
 }
