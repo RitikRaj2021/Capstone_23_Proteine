@@ -894,3 +894,6 @@ C:\Users\nzbob\OneDrive\Documents\GitHub\Capstone_23_Proteine\Capstone_23_Protei
 C:\Users\nzbob\OneDrive\Documents\GitHub\Capstone_23_Proteine\Capstone_23_Proteine\obj\Debug\net6.0\ref\Capstone_23_Proteine.dll
 C:\Users\nzbob\OneDrive\Documents\GitHub\Capstone_23_Proteine\Capstone_23_Proteine\bin\Debug\net6.0\SendGrid.dll
 C:\Users\nzbob\OneDrive\Documents\GitHub\Capstone_23_Proteine\Capstone_23_Proteine\bin\Debug\net6.0\StarkbankEcdsa.dll
+E:\ProjectWork\Capstone2023\newCapstone\New folder (2)\Capstone_23_Proteine\Capstone_23_Proteine\bin\Debug\net6.0\SendGrid.dll
+E:\ProjectWork\Capstone2023\newCapstone\New folder (2)\Capstone_23_Proteine\Capstone_23_Proteine\bin\Debug\net6.0\StarkbankEcdsa.dll
+E:\ProjectWork\Capstone2023\newCapstone\New folder (2)\Capstone_23_Proteine\Capstone_23_Proteine\bin\Debug\net6.0\secrets.json

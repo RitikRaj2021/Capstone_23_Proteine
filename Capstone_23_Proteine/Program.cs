@@ -1,10 +1,12 @@
 using Capstone_23_Proteine.Data;
+using Capstone_23_Proteine.Services;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var SendGridApiKey = builder.Configuration["SendGridKey"];
+var sendGridApiKey = builder.Configuration["SendGridKey"];
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -15,6 +17,8 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddTransient<IEmailSender>(serviceProvider => new EmailSender(sendGridApiKey));
 
 var app = builder.Build();
 
