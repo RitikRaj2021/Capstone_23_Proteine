@@ -11,7 +11,7 @@ namespace Capstone_23_Proteine.Services
 
         public async Task SendEmail(string subject, string email, string message)
         {
-            var apiKey = "";
+            var apiKey = "SendGridApiKey";
             var client = new SendGridClient(apiKey);
             var from = new EmailAddress("proteine.team@gmail.com", "Proteine Team");
             var to = new EmailAddress(email);
