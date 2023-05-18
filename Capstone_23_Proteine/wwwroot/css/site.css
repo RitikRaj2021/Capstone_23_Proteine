@@ -36,3 +36,8 @@ body {
 h1 {
     color: #8DA242;
 }
+
+.navbar{
+   margin-top: -10px;
+    margin-bottom:30px;
+}
