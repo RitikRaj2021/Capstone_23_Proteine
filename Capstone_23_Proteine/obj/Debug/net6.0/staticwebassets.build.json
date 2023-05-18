@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5tgS4tiuwvOzLh7kMxlQh5A23MrnlSJGkw4f4q4U4Xk=",
+  "Hash": "wDdVehzGLVMtWjdrf1mSN4FFmG8Y04B2S3b6ltXhdRQ=",
   "Source": "Capstone_23_Proteine",
   "BasePath": "_content/Capstone_23_Proteine",
   "Mode": "Default",
@@ -1122,6 +1122,23 @@
       "OriginalItemSpec": "wwwroot\\Image\\anotherinfo.png"
     },
     {
+      "Identity": "E:\\ProjectWork\\Capstone2023\\newCapstone\\New folder (2)\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\book.png",
+      "SourceId": "Capstone_23_Proteine",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ProjectWork\\Capstone2023\\newCapstone\\New folder (2)\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\",
+      "BasePath": "_content/Capstone_23_Proteine",
+      "RelativePath": "Image/book.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\book.png"
+    },
+    {
       "Identity": "E:\\ProjectWork\\Capstone2023\\newCapstone\\New folder (2)\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\Cereal.png",
       "SourceId": "Capstone_23_Proteine",
       "SourceType": "Discovered",
@@ -1190,6 +1207,23 @@
       "OriginalItemSpec": "wwwroot\\Image\\Infographicfood.png"
     },
     {
+      "Identity": "E:\\ProjectWork\\Capstone2023\\newCapstone\\New folder (2)\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\logging.png",
+      "SourceId": "Capstone_23_Proteine",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ProjectWork\\Capstone2023\\newCapstone\\New folder (2)\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\",
+      "BasePath": "_content/Capstone_23_Proteine",
+      "RelativePath": "Image/logging.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\logging.png"
+    },
+    {
       "Identity": "E:\\ProjectWork\\Capstone2023\\newCapstone\\New folder (2)\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\ProteineLogo.png",
       "SourceId": "Capstone_23_Proteine",
       "SourceType": "Discovered",
@@ -1222,6 +1256,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Image\\ProteineLogo_lessBlack.png"
+    },
+    {
+      "Identity": "E:\\ProjectWork\\Capstone2023\\newCapstone\\New folder (2)\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\shoe.png",
+      "SourceId": "Capstone_23_Proteine",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ProjectWork\\Capstone2023\\newCapstone\\New folder (2)\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\",
+      "BasePath": "_content/Capstone_23_Proteine",
+      "RelativePath": "Image/shoe.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\shoe.png"
     },
     {
       "Identity": "E:\\ProjectWork\\Capstone2023\\newCapstone\\New folder (2)\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\VegMeal.png",
