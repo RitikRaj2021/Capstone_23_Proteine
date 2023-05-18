@@ -1,4 +1,5 @@
 ﻿using Capstone_23_Proteine.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor.Compilation;
 using System.Diagnostics;
@@ -24,6 +25,7 @@ namespace Capstone_23_Proteine.Controllers
             return View();
         }
 
+        [Authorize(Roles ="Admin") ]
         public IActionResult Privacy()
         {
             return View();

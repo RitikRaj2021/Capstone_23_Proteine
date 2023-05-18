@@ -594,3 +594,4 @@ E:\ProjectWork\Capstone2023\newCapstone\New folder (2)\Capstone_23_Proteine\Caps
 E:\ProjectWork\Capstone2023\newCapstone\New folder (2)\Capstone_23_Proteine\Capstone_23_Proteine\obj\Debug\net6.0\Capstone_23_Proteine.pdb
 E:\ProjectWork\Capstone2023\newCapstone\New folder (2)\Capstone_23_Proteine\Capstone_23_Proteine\obj\Debug\net6.0\Capstone_23_Proteine.genruntimeconfig.cache
 E:\ProjectWork\Capstone2023\newCapstone\New folder (2)\Capstone_23_Proteine\Capstone_23_Proteine\obj\Debug\net6.0\ref\Capstone_23_Proteine.dll
+E:\ProjectWork\Capstone2023\newCapstone\New folder (2)\Capstone_23_Proteine\Capstone_23_Proteine\bin\Debug\net6.0\secrets.json
