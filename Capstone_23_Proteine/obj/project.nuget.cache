@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2anaVDxoxX4/xjky0ar+whRCf8wqgysTe+tAaRHenM1tkysMfeZEYsFMwEAH8+0MbTAXYG2jL9o/TDRXT5kMHQ==",
+  "dgSpecHash": "Fj3jADtv33OYzpu3lEUKRCkg+1dxNm2EOCLe9ea6F18qlbKdd5p0WbmE/ChiWXAEXLfmQq1O/WHgb+bQhhuNFQ==",
   "success": true,
   "projectFilePath": "E:\\ProjectWork\\Capstone2023\\newCapstone\\New folder (2)\\Capstone_23_Proteine\\Capstone_23_Proteine\\Capstone_23_Proteine.csproj",
   "expectedPackageFiles": [
@@ -111,6 +111,8 @@
     "C:\\Users\\Ritik Local Admin\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Ritik Local Admin\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Ritik Local Admin\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\Ritik Local Admin\\.nuget\\packages\\sendgrid\\9.28.1\\sendgrid.9.28.1.nupkg.sha512",
+    "C:\\Users\\Ritik Local Admin\\.nuget\\packages\\starkbank-ecdsa\\1.3.3\\starkbank-ecdsa.1.3.3.nupkg.sha512",
     "C:\\Users\\Ritik Local Admin\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Ritik Local Admin\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Ritik Local Admin\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
