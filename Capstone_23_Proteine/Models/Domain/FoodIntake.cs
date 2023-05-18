@@ -8,5 +8,7 @@
         public int Fat { get; set; }
         public string MealName { get; set; }
         public DateTime Date { get; set; }
+
+       
     }
 }

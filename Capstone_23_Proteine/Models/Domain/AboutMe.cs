@@ -1,4 +1,6 @@
-﻿namespace Capstone_23_Proteine.Models.Domain
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace Capstone_23_Proteine.Models.Domain
 {
     public class AboutMe
     {
@@ -11,6 +13,7 @@
         public DateTime DateOfBirth { get; set; }
         public string DietaryOptions { get; set; }
         public string UserActivity { get; set; }
+
 
     }
 }

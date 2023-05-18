@@ -1,4 +1,7 @@
-﻿namespace Capstone_23_Proteine.Models
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
+namespace Capstone_23_Proteine.Models
 {
     public class AboutMeViewModel
     {
