@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Capstone_23_Proteine.props" />
-</Project>
