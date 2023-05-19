@@ -22,19 +22,15 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var foodIntake in Model ?? Enumerable.Empty<Capstone_23_Proteine.Models.Domain.FoodIntake>())
-        {
-            // Check if the current food intake belongs to the logged-in user
-            if (foodIntake != null && foodIntake.UserId == User.Identity.Name)
-            {
-                <tr>
-                    <td>@foodIntake.Protein</td>
-                    <td>@foodIntake.Calories</td>
-                    <td>@foodIntake.Fat</td>
-                    <td>@foodIntake.MealName</td>
-                    <td>@foodIntake.Date.ToString("dd-MM-yyyy")</td>
-                </tr>
-            }
-        }
-    </tbody>
+    @foreach (var foodIntake in Model)
+    {
+        <tr>
+            <td>@foodIntake.Protein</td>
+            <td>@foodIntake.Calories</td>
+            <td>@foodIntake.Fat</td>
+            <td>@foodIntake.MealName</td>
+            <td>@foodIntake.Date.ToString("dd-MM-yyyy")</td>
+        </tr>
+    }
+</tbody>
 </table>

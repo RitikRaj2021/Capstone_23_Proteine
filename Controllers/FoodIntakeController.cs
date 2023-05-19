@@ -23,11 +23,17 @@ namespace Capstone_23_Proteine.Controllers
         [HttpGet]
         public async Task<IActionResult> MyRecords()
         {
+
+            var userId = userManager.GetUserId(User);
+            var foodIntake = await applicationDbContext.FoodIntake.Where(f => f.UserId == userId).ToListAsync();
+            return View(foodIntake);
+
+            /*
             // Retrieve all FoodIntake records from the database
             var foodIntake = await applicationDbContext.FoodIntake.ToListAsync();
 
             // Pass the foodIntake records to the view for display
-            return View(foodIntake);
+            return View(foodIntake);*/
         }
 
         // GET: /FoodIntake/FoodIntake
