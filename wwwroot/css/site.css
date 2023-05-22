@@ -54,3 +54,65 @@ h1 {
     margin: 100px;
 }
 
+
+
+
+
+#nav {
+    list-style: none inside;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+    #nav li {
+        display: block;
+        position: relative;
+        float: left;
+
+    }
+
+        #nav li a {
+            display: block;
+            text-decoration: none;
+            color: #8DA242;
+            /* list item font color */
+        }
+
+        #nav li li a {
+            font-size: 80%;
+        }
+
+
+        /* smaller font size for sub menu items */
+
+
+    #nav ul {
+        position: absolute;
+        padding: 0;
+        left: 0;
+        display: none;
+        /* hides sublists */
+    }
+
+    #nav li:hover ul ul {
+        display: none;
+    }
+
+
+    /* hides sub-sublists */
+
+    #nav li:hover ul {
+        display: block;
+    }
+
+
+    /* shows sublist on hover */
+
+    #nav li li:hover ul {
+        display: block;
+        /* shows sub-sublist on hover */
+        margin-left: 200px;
+        /* this should be the same width as the parent list item */
+        margin-top: -35px;
+        /* aligns top of sub menu with top of list item */
