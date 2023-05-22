@@ -15,29 +15,6 @@ public class Program
 
         var sendGridApiKey = builder.Configuration["SendGridKey"];
 
-
-
-        // Set up the Azure Key Vault client
-        string keyVaultName = "SendGridApiKey";
-        string secretName = "SendGridKeyVault";
-
-        var keyVaultUrl = $"https://{keyVaultName}.vault.azure.net/";
-        var client = new SecretClient(new Uri(keyVaultUrl), new DefaultAzureCredential());
-
-        // Retrieve the SendGrid API key from the Key Vault
-        KeyVaultSecret secret = client.GetSecret(secretName);
-        string apiKey = secret.Value;
-
-        // Use the API key to initialize the SendGridClient
-        string host = "api.sendgrid.com"; // or the appropriate SendGrid API host
-        var sendGridClient = new SendGridClient(apiKey, host);
-
-
-
-
-
-
-
         // Add services to the container.
         var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
         builder.Services.AddDbContext<ApplicationDbContext>(options =>
