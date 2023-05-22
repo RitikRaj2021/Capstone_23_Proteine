@@ -68,6 +68,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMYW5kaW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/OEM/Desktop/Capstone_maybeWorks/Capstone_23_Proteine/Capstone_23_Proteine/Views/Home/Mediterranean_Diet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZWRpdGVycmFuZWFuX0RpZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OEM/Desktop/Capstone_maybeWorks/Capstone_23_Proteine/Capstone_23_Proteine/Views/Home/Mood.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNb29kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/OEM/Desktop/Capstone_maybeWorks/Capstone_23_Proteine/Capstone_23_Proteine/Views/Home/MyDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNeURldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -78,6 +86,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/OEM/Desktop/Capstone_maybeWorks/Capstone_23_Proteine/Capstone_23_Proteine/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/OEM/Desktop/Capstone_maybeWorks/Capstone_23_Proteine/Capstone_23_Proteine/Views/Home/Sleep.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTbGVlcC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/OEM/Desktop/Capstone_maybeWorks/Capstone_23_Proteine/Capstone_23_Proteine/Views/Shared/Error.cshtml]

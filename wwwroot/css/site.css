@@ -117,3 +117,8 @@ h1 {
         margin-top: -35px;
         /* aligns top of sub menu with top of list item */
     }
+    
+.B {
+    border-width: thick ;
+}
+
