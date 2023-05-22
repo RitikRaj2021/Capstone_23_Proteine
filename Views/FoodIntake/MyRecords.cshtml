@@ -1,0 +1,36 @@
+﻿@model List<Capstone_23_Proteine.Models.Domain.FoodIntake>
+
+@{
+    ViewData["Title"] = "MyRecords";
+}
+
+<div>
+    <h1 style="text-align: center;">MyRecords</h1>
+    <br />
+</div>
+
+<h2 style="text-align: center;">Meals</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Protein</th>
+            <th>Calories</th>
+            <th>Fat</th>
+            <th>MealName</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var foodIntake in Model)
+    {
+        <tr>
+            <td>@foodIntake.Protein</td>
+            <td>@foodIntake.Calories</td>
+            <td>@foodIntake.Fat</td>
+            <td>@foodIntake.MealName</td>
+            <td>@foodIntake.Date.ToString("dd-MM-yyyy")</td>
+        </tr>
+    }
+</tbody>
+</table>
