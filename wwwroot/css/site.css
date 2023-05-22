@@ -41,3 +41,16 @@ h1 {
    margin-top: -10px;
     margin-bottom:30px;
 }
+
+
+.card-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.smallimg {
+  
+    margin: 100px;
+}
+
