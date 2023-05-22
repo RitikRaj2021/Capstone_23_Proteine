@@ -73,6 +73,20 @@ namespace Capstone_23_Proteine.Controllers
             return View();
         }
 
+        public IActionResult Sleep()
+        {
+            return View();
+        }
+        public IActionResult Mediterranean_Diet()
+        {
+            return View();
+        }
+        public IActionResult Mood()
+        {
+            return View();
+        }
+
+
         // GET: /Home/Error
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
