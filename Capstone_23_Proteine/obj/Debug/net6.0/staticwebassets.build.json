@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QI8BOVvFPIOPzigdL1XPIRpCsvW6/ZaJ1fjZIUpZQfw=",
+  "Hash": "aGa935VlRoGFwDg3sPnxHle3zuHkLuLYj0gTFtvKtJo=",
   "Source": "Capstone_23_Proteine",
   "BasePath": "_content/Capstone_23_Proteine",
   "Mode": "Default",
@@ -1105,6 +1105,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\Alcohol1.png",
+      "SourceId": "Capstone_23_Proteine",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\",
+      "BasePath": "_content/Capstone_23_Proteine",
+      "RelativePath": "Image/Alcohol1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\Alcohol1.png"
+    },
+    {
       "Identity": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\anotherinfo.png",
       "SourceId": "Capstone_23_Proteine",
       "SourceType": "Discovered",
@@ -1173,6 +1190,23 @@
       "OriginalItemSpec": "wwwroot\\Image\\Chicken.png"
     },
     {
+      "Identity": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\Coffee1.png",
+      "SourceId": "Capstone_23_Proteine",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\",
+      "BasePath": "_content/Capstone_23_Proteine",
+      "RelativePath": "Image/Coffee1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\Coffee1.png"
+    },
+    {
       "Identity": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\FruitBowl.png",
       "SourceId": "Capstone_23_Proteine",
       "SourceType": "Discovered",
@@ -1188,6 +1222,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Image\\FruitBowl.png"
+    },
+    {
+      "Identity": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\HeavyMeal1.png",
+      "SourceId": "Capstone_23_Proteine",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\",
+      "BasePath": "_content/Capstone_23_Proteine",
+      "RelativePath": "Image/HeavyMeal1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\HeavyMeal1.png"
     },
     {
       "Identity": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\Infographicfood.png",
@@ -1222,6 +1273,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Image\\logging.png"
+    },
+    {
+      "Identity": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\MOOD.png",
+      "SourceId": "Capstone_23_Proteine",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\",
+      "BasePath": "_content/Capstone_23_Proteine",
+      "RelativePath": "Image/MOOD.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\MOOD.png"
     },
     {
       "Identity": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\ProteineLogo.png",
@@ -1273,6 +1341,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Image\\shoe.png"
+    },
+    {
+      "Identity": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\Sleep.png",
+      "SourceId": "Capstone_23_Proteine",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\",
+      "BasePath": "_content/Capstone_23_Proteine",
+      "RelativePath": "Image/Sleep.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\Sleep.png"
+    },
+    {
+      "Identity": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\something.png",
+      "SourceId": "Capstone_23_Proteine",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\",
+      "BasePath": "_content/Capstone_23_Proteine",
+      "RelativePath": "Image/something.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\something.png"
     },
     {
       "Identity": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\VegMeal.png",
