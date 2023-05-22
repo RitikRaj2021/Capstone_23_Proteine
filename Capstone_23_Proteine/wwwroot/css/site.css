@@ -36,3 +36,14 @@ body {
 h1 {
     color: #8DA242;
 }
+.card-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.smallimg {
+  
+    margin: 100px;
+}
+
