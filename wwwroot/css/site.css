@@ -43,3 +43,14 @@ h1 {
 }
 
 
+.card-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.smallimg {
+  
+    margin: 100px;
+}
+
