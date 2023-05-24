@@ -1,0 +1,112 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    
+    </div>
+
+
+
+
+
+    <div class="container text-center border" style="text-align: center; max-inline-size: 1900px;" >
+        <div class="row">
+            <div class="col-3 border">
+                <div class="row">
+
+                    <img src="/Image/no-image.png" alt="Not Logged In" />
+
+                    <script>
+                        function OpenWins() {
+                            window.open("Identity/Account/Login");
+                        }
+                    </script>
+
+                    
+                        <input type="button" value="Upload Image" onclick="OpenWins()" readonly />
+                   
+                </div>
+            </div>
+        <div class="col-4 ">
+
+                <div class="row">
+                <p style="font-size: 12px; text-align: center; margin-inline-start: 115px ;"> Daily Summary </p> <p style="font-size: 50px; text-align:left; margin-inline-start:155px; color: #8DA242;"> 2600 Calories </p>
+                </div>
+                <div class="row" style="text-align: center">
+                    
+                    <script>
+                        function OpenWin() {
+                            window.open("/FoodIntake/FoodIntake");
+                        }
+                    </script>
+
+                <input type="button" value="Add Meal" onclick="OpenWin()" style="margin-inline-start:170px; width: 300px; background-color: #A7BC5B; border-color: #A7BC5B ;" >
+
+                <label for="Activity"></label>
+                    <select name="Activity" id="Activity" style="margin-inline-start:170px; width:300px;">
+                        <option value="User Activity">User Activity</option>
+                        <option value="Regular Active">Regular Active</option>
+                        <option value="Medium Active">Medium Active</option>
+                        <option value="Not Active">Not Active</option>
+                    </select>
+                
+                <input type="submit" id="BTNSub" value="Submit" style="margin-inline-start:170px; width:300px; background-color: #A7BC5B; border-color: #A7BC5B ;" />
+
+                </div>
+            </div>
+
+            <div class="col border" style=" margin-inline-start: 200px ;" >
+                 <div class="card-group">
+
+                
+                <div class="card-title">
+                    <h5 style="text-align: center; font-size: 30px; color: #8DA242;   ">
+                    More To Know
+                      </h5>
+                   <div class="card-body" style="max-width: 300px ; text-align: center ;">
+                       <p>
+                            What to Eat and Avoid For Better Sleep
+
+                              Take a deeper look at how diet affects athletes’ sleep.
+
+                            <a href="@Url.Action("Sleep","Home")" style="color:  #8DA242;">  Read More </a>
+                        </p>
+                    </div>
+
+                </div>
+                 <div class="card-body" style="max-width: 300px ; text-align: center ;">
+                     <p>
+                          The Performance Benefits of the Mediterranean Diet
+
+                   The Mediterranean diet has many benefits that go beyond good health to good performance
+
+                        <a href="@Url.Action("Mediterranean_Diet","Home")" style="color:  #8DA242;">  Read More </a>
+                     </p>
+
+                 </div>
+
+
+                 <div class="card-body" style="max-width: 300px ; text-align: center ; ">
+
+                     <p>
+
+                         This Is the Quickest Way to Boost Your Mood
+
+                   Research shows spending too much time sitting could take its toll on your mental health, increasing the risk of depression.
+
+
+                   <a href="@Url.Action("Mood","Home")" style="color:  #8DA242;">  Read More </a>
+                     </p>
+
+                 </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+
+
+    
+    

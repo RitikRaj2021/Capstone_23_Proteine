@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Capstone_23_Proteine.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\Alcohol1.png",
+      "PackagePath": "staticwebassets\\Image\\Alcohol1.png"
+    },
+    {
       "Id": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\Cereal.png",
       "PackagePath": "staticwebassets\\Image\\Cereal.png"
     },
@@ -13,12 +17,24 @@
       "PackagePath": "staticwebassets\\Image\\Chicken.png"
     },
     {
+      "Id": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\Coffee1.png",
+      "PackagePath": "staticwebassets\\Image\\Coffee1.png"
+    },
+    {
       "Id": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\FruitBowl.png",
       "PackagePath": "staticwebassets\\Image\\FruitBowl.png"
     },
     {
+      "Id": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\HeavyMeal1.png",
+      "PackagePath": "staticwebassets\\Image\\HeavyMeal1.png"
+    },
+    {
       "Id": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\Infographicfood.png",
       "PackagePath": "staticwebassets\\Image\\Infographicfood.png"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\MOOD.png",
+      "PackagePath": "staticwebassets\\Image\\MOOD.png"
     },
     {
       "Id": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\ProteineLogo.png",
@@ -27,6 +43,10 @@
     {
       "Id": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\ProteineLogo_lessBlack.png",
       "PackagePath": "staticwebassets\\Image\\ProteineLogo_lessBlack.png"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\Sleep.png",
+      "PackagePath": "staticwebassets\\Image\\Sleep.png"
     },
     {
       "Id": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\VegMeal.png",
@@ -47,6 +67,10 @@
     {
       "Id": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\shoe.png",
       "PackagePath": "staticwebassets\\Image\\shoe.png"
+    },
+    {
+      "Id": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\Image\\something.png",
+      "PackagePath": "staticwebassets\\Image\\something.png"
     },
     {
       "Id": "C:\\Users\\OEM\\Desktop\\Capstone_maybeWorks\\Capstone_23_Proteine\\Capstone_23_Proteine\\wwwroot\\css\\site.css",

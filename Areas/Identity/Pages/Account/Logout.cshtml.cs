@@ -29,13 +29,13 @@ namespace Capstone_23_Proteine.Areas.Identity.Pages.Account
             _logger.LogInformation("User logged out.");
             if (returnUrl != null)
             {
-                return Redirect("https://localhost:7116/");
+                return Redirect("https://proteine.life/");
             }
             else
             {
                 // This needs to be a redirect so that the browser performs a new
                 // request and the identity for the user gets updated.
-                return Redirect("https://localhost:7116/");
+                return Redirect("https://proteine.life/");
             }
         }
     }
