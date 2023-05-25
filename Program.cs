@@ -25,6 +25,8 @@ public class Program
 
         builder.Services.AddTransient<IEmailSender>(serviceProvider => new EmailSender(sendGridApiKey));
 
+        builder.Services.AddCoreAdmin();
+
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
@@ -96,6 +98,8 @@ public class Program
 
         }
         app.MapRazorPages();
+
+        app.UseCoreAdminCustomUrl("adminpanel");
 
         app.Run();
     }

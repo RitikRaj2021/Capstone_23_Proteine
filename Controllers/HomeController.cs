@@ -55,6 +55,12 @@ namespace Capstone_23_Proteine.Controllers
             return View();
         }
 
+        public IActionResult Admin()
+        {
+            return View();
+        }
+
+
         // GET: /Home/AboutMe
         public IActionResult AboutMe()
         {
