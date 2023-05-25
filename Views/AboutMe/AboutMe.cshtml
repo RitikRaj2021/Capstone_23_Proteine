@@ -1,84 +1,109 @@
 ﻿@model Capstone_23_Proteine.Models.AboutMeViewModel
 
 @{
-}
-@{
     ViewData["Title"] = "AboutMe";
 }
 
-<div style="background-color:#FFFF; padding:50px; border-radius:25px;">
-    <div class="text-center">
+<link href="~/css/site.css" rel="stylesheet"/>
+﻿
 
-    <h1>About Me</h1>
+
+<div class="text-center">
+    <h1> About Me </h1>
 </div>
-<!--this is for the users name-->
-<form method="post" action="AboutMe">
-    <div class="aboutmealign , text-left">
-    <div>
-        <label for="">First name:</label>
-        <input type="text" class="form-control" asp-for="FirstName"><br>
-        <label for="">Last name:</label>
-        <input type="text" class="form-control" asp-for="LastName"><br>
-    </div>
-    <!--This is for the users gender-->
-    <div>
-        <label for="">Select your Gender:</label>
-        <select name="Gender" type="text" class="form-control" asp-for="Gender">
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-        </select><br>
+<div class="row" >
+    <div class="col" style="margin-inline-start:220px;">
+        <div class="leftsideabtme">
+
+
+            <div>
+
+                <div style="display: flex; align-content:center;">
+
+                    <!--this is for the users name-->
+                    <form method="post" action="AboutMe">
+
+                        <div class="text-left">
+                            <div>
+                                <label for="">First name:</label>
+                                <input type="text" class="form-control" asp-for="FirstName"><br>
+                                <label for="">Last name:</label>
+                                <input type="text" class="form-control" asp-for="LastName"><br>
+                            </div>
+                            <!--This is for the users gender-->
+                            <div>
+                                <label for="">Select your Gender:</label>
+                                <select name="Gender" type="text" class="form-control" asp-for="Gender">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select><br>
+                            </div>
+
+                            <!--This is for the users height-->
+                            <div>
+                                <label for="">Height in CM:</label>
+                                <input type="number" class="form-control" asp-for="Height"><br>
+                            </div>
+                            <!--This is for the users weight-->
+                            <div>
+                                <label for="weight">Weight in KG:</label>
+                                <input type="number" class="form-control" asp-for="Weight"><br>
+                            </div>
+                            <!--This is for the users date of birth-->
+                            <div>
+                                <label for="">Date Of Birth:</label>
+                                <input type="date" class="form-control" asp-for="DateOfBirth"><br>
+                            </div>
+                            <!--This is for the users Dietary Options-->
+                            <div>
+                                <label for="">Dietary Options:</label>
+                                <select name="DietaryOptions" type="text" class="form-control" asp-for="DietaryOptions">
+                                    <option value="n/a">n/a</option>
+                                    <option value="Vegetarian">Vegetarian</option>
+                                    <option value="vegan">Vegan</option>
+                                    <option value="gluten-free">Gluten-Free</option>
+                                    <option value="dairy-free">Dairy-Free</option>
+                                    <option value="kosher">Kosher</option>
+                                    <option value="halal">Halal</option>
+                                    <option value="pescatarian">Pescatarian</option>
+                                    <option value="low-carb">Low-Carb</option>
+                                    <option value="low-fat">Low-Fat</option>
+                                    <option value="organic">Organic</option>
+                                    <option value="raw">Raw</option>
+                                    <option value="sugar-free">Sugar-Free</option>
+                                </select><br>
+                            </div>
+                            <!--This is for the users activity-->
+                            <div>
+                                <label for="">User Activity:</label>
+                                <select name="UserActivity" type="text" class="form-control" asp-for="UserActivity">
+                                    <option value="Regular Active">Regular Active</option>
+                                    <option value="Medium Active">Medium Active</option>
+                                    <option value="Not Active">Not Active</option>
+                                </select><br>
+                            </div>
+                            <!--This is for the submit button-->
+                        </div>
+                        <div>
+                            <button style="width: 150px; margin-left: 200px; background-color: green; border-color: green;" type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
     </div>
 
-    <!--This is for the users height-->
-    <div>
-        <label for="">Height in CM:</label>
-        <input type="number" class="form-control" asp-for="Height"><br>
-    </div>
-    <!--This is for the users weight-->
-    <div>
-        <label for="weight">Weight in KG:</label>
-        <input type="number" class="form-control" asp-for="Weight"><br>
-    </div>
-    <!--This is for the users date of birth-->
-    <div>
-        <label for="">Date Of Birth:</label>
-        <input type="date" class="form-control" asp-for="DateOfBirth"><br>
-    </div>
-    <!--This is for the users Dietary Options-->
-    <div>
-    <label for="">Dietary Options:</label>
-        <select name="DietaryOptions" type="text" class="form-control" asp-for="DietaryOptions">
-            <option value="n/a">n/a</option>
-            <option value="Vegetarian">Vegetarian</option>
-            <option value="vegan">Vegan</option>
-            <option value="gluten-free">Gluten-Free</option>
-            <option value="dairy-free">Dairy-Free</option>
-            <option value="kosher">Kosher</option>
-            <option value="halal">Halal</option>
-            <option value="pescatarian">Pescatarian</option>
-            <option value="low-carb">Low-Carb</option>
-            <option value="low-fat">Low-Fat</option>
-            <option value="organic">Organic</option>
-            <option value="raw">Raw</option>
-            <option value="sugar-free">Sugar-Free</option>
-        </select><br>
-    </div>
-    <!--This is for the users activity-->
-    <div>
-        <label for="">User Activity:</label>
-        <select name="UserActivity" type="text" class="form-control" asp-for="UserActivity">
-            <option value="Regular Active">Regular Active</option>
-            <option value="Medium Active">Medium Active</option>
-            <option value="Not Active">Not Active</option>
-        </select><br>
-    </div>
-    <!--This is for the submit button-->
-    </div>
-        <div class="aboutmealign">
-    <button style="width: 150px; margin-left: 200px; background-color: green; border-color: green;" type="submit" class="btn btn-primary">Submit</button>
-    </div>
-   
+    <!--This is for the img alignment-->
+    <div class="col" style="margin-inline-end:120px; padding-top:70px;">
 
-</form>
+        <div class="rightsideabtme">
 
+            <img src="~/Image/Infographicfood.png" class="width=" 450" height="550" />
+
+        </div>
+    </div>
 </div>
+
+
