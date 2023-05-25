@@ -38,7 +38,7 @@
         </li>
 
         <li class="nav-item" style="margin-left: 50px">
-            <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="MyRecords"><font color="#FFFFFF">|</font> </a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="" onclick="openAdmin()"><font color="#FFFFFF">|</font> </a>
         </li>
 
         <li class="nav-item">
@@ -61,3 +61,9 @@
         </li>
     }
 </ul>
+
+<script>
+    function openAdmin() {
+        window.open("../adminpanel");
+    }
+</script>
