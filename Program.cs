@@ -13,10 +13,20 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        var sendGridApiKey = builder.Configuration["SendGridKey"];
+        // Retrieve SendGrid API key from Azure Vault
+        var vaultUri = builder.Configuration["VaultUri"];
+        var secretName = builder.Configuration["SendGridApiKeySecretName"];
+
+        var credential = new DefaultAzureCredential();
+        var client = new SecretClient(new Uri(vaultUri), credential);
+        var secret = await client.GetSecretAsync(secretName);
+
+        var sendGridApiKey = secret.Value.Value;
+
+        // Retrieve the database connection string
+        var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
         // Add services to the container.
-        var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
         builder.Services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(connectionString));
         builder.Services.AddDatabaseDeveloperPageExceptionFilter();
@@ -66,8 +76,6 @@ public class Program
                 if (!await roleManager.RoleExistsAsync(role))
                     await roleManager.CreateAsync(new IdentityRole(role));
             }
-
-
         }
 
         /*----User----*/
@@ -85,19 +93,16 @@ public class Program
                 var user = new IdentityUser();
                 user.UserName = email;
                 user.Email = email;
-                user.EmailConfirmed= false;
+                user.EmailConfirmed = false;
 
                 /*register user in database*/
                 await userManager.CreateAsync(user, password);
 
                 /*add user to specific role*/
                 await userManager.AddToRoleAsync(user, "Admin");
-
-
             }
-
-
         }
+
         app.MapRazorPages();
 
         app.Run();
