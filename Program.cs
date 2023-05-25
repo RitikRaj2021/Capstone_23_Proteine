@@ -1,11 +1,10 @@
-using Capstone_23_Proteine.Data;
-using Capstone_23_Proteine.Services;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI.Services;
-using Microsoft.EntityFrameworkCore;
 using Azure.Identity;
 using Azure.Security.KeyVault.Secrets;
-using SendGrid;
+using Capstone_23_Proteine.Data;
+using Capstone_23_Proteine.Services;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 public class Program
 {
@@ -13,30 +12,37 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
+        // Add services to the container.
+        var services = builder.Services;
+
         // Retrieve SendGrid API key from Azure Vault
-        var vaultUri = builder.Configuration["VaultUri"];
-        var secretName = builder.Configuration["SendGridApiKeySecretName"];
+        string vaultUri = "https://proteinekeyvault.vault.azure.net/";
+        string sendGridApiKeySecretName = "SendGridKey";
 
         var credential = new DefaultAzureCredential();
         var client = new SecretClient(new Uri(vaultUri), credential);
-        var secret = await client.GetSecretAsync(secretName);
 
-        var sendGridApiKey = secret.Value.Value;
+        KeyVaultSecret secret = client.GetSecret(sendGridApiKeySecretName);
+
+        string sendGridApiKey = secret.Value;
+
+        // Register the sendGridApiKey as a dependency
+        services.AddSingleton(sendGridApiKey);
 
         // Retrieve the database connection string
         var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
         // Add services to the container.
-        builder.Services.AddDbContext<ApplicationDbContext>(options =>
+        services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(connectionString));
-        builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+        services.AddDatabaseDeveloperPageExceptionFilter();
 
-        builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+        services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
             .AddRoles<IdentityRole>()
             .AddEntityFrameworkStores<ApplicationDbContext>();
-        builder.Services.AddControllersWithViews();
+        services.AddControllersWithViews();
 
-        builder.Services.AddTransient<IEmailSender>(serviceProvider => new EmailSender(sendGridApiKey));
+        services.AddTransient<IEmailSender>(serviceProvider => new EmailSender(sendGridApiKey));
 
         var app = builder.Build();
 
