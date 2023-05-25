@@ -4,43 +4,68 @@
     ViewData["Title"] = "MyRecords";
 }
 
-@{
-    // Calculate total calories for today
-    DateTime today = DateTime.Today;
-    int totalCalories = Model.Where(f => f.Date.Date == today).Sum(f => f.Calories);
-}
+
+
+
 
 <div>
     <h1 style="text-align: center;">MyRecords</h1>
     <br />
 </div>
+<div class="row">
+    <div class="col" style="margin-inline-start:220px;">
+        <div class="leftsidemyrec">
+            <!--start of base code-->
+            @{
+                // Calculate total calories for today
+                DateTime today = DateTime.Today;
+                int totalCalories = Model.Where(f => f.Date.Date == today).Sum(f => f.Calories);
+            }
 
-<h2 style="text-align: center;">Meals</h2>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Protein</th>
-            <th>Calories</th>
-            <th>Fat</th>
-            <th>MealName</th>
-            <th>Date</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var foodIntake in Model)
-        {
-            <tr>
-                <td>@foodIntake.Protein</td>
-                <td>@foodIntake.Calories</td>
-                <td>@foodIntake.Fat</td>
-                <td>@foodIntake.MealName</td>
-                <td>@foodIntake.Date.ToString("dd-MM-yyyy")</td>
-            </tr>
-        }
-    </tbody>
-</table>
 
-<div>
-    <h3 style="text-align: center;">Total Calories for Today: @totalCalories</h3>
+            <h2 style="text-align: center;">Meals</h2>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Protein</th>
+                        <th>Calories</th>
+                        <th>Fat</th>
+                        <th>MealName</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var foodIntake in Model)
+                    {
+                        <tr>
+                            <td>@foodIntake.Protein</td>
+                            <td>@foodIntake.Calories</td>
+                            <td>@foodIntake.Fat</td>
+                            <td>@foodIntake.MealName</td>
+                            <td>@foodIntake.Date.ToString("dd-MM-yyyy")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <div>
+                <h3 style="text-align: center;">Total Calories for Today: @totalCalories</h3>
+            </div>
+            <!--End of base code-->
+        </div>
+    </div>
+
+
+
+    <!--This is for the img alignment-->
+    <div class="col" style="margin-inline-end:120px; padding-top:70px;">
+
+        <div class="rightsidemyrec">
+
+            <img src="~/Image/MOOD.png" style=" width="250" height="350px" />
+
+        </div>
+    </div>
 </div>
