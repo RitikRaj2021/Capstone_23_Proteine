@@ -12,28 +12,34 @@
             <br />
             <img src="~/Image/Chicken.png" class="width="350" height="350"/>
         </div>
+
         <div style="margin-left: 50px;">
             <form method="post" action="FoodIntake" class="mt-5">
                 <div class="foodIntakeAlign , text-left">
+
                     <div class="mb-3">
-                        <label for="" class="form-label">Protein</label>
-                        <input type="number" class="form-control" asp-for="Protein">
+                        <label for="" class="form-label">Date</label>
+                        <input type="date" class="form-control" asp-for="Date">
                     </div>
-                    <div class="mb-3">
-                        <label for="" class="form-label">Calories</label>
-                        <input type="number" class="form-control" asp-for="Calories">
-                    </div>
-                    <div class="mb-3">
-                        <label for="" class="form-label">Fat</label>
-                        <input type="number" class="form-control" asp-for="Fat">
-                    </div>
+
                     <div class="mb-3">
                         <label for="" class="form-label">MealName</label>
                         <input type="text" class="form-control" asp-for="MealName">
                     </div>
+
                     <div class="mb-3">
-                        <label for="" class="form-label">Date</label>
-                        <input type="date" class="form-control" asp-for="Date">
+                        <label for="" class="form-label">Protein</label>
+                        <input type="number" class="form-control" asp-for="Protein">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="" class="form-label">Calories</label>
+                        <input type="number" class="form-control" asp-for="Calories">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="" class="form-label">Fat</label>
+                        <input type="number" class="form-control" asp-for="Fat">
                     </div>
 
                     <div class="submitBTNFI">
