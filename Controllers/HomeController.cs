@@ -92,6 +92,43 @@ namespace Capstone_23_Proteine.Controllers
             return View();
         }
 
+        public IActionResult Crispy_Falafels()
+        {
+            return View();
+        }
+        public IActionResult Spanish_pisto()
+        {
+            return View();
+        }
+        public IActionResult Veggie_nachos()
+        {
+            return View();
+        }
+        public IActionResult Rainbow_chicken()
+        {
+            return View();
+        }
+        public IActionResult Lamb()
+        {
+            return View();
+        }
+        public IActionResult MEd_salad()
+        {
+            return View();
+        }
+        public IActionResult Chicken_and_()
+        {
+            return View();
+        }
+        public IActionResult Chicken_pad()
+        {
+            return View();
+        }
+
+        public IActionResult Pie_vegg()
+        {
+            return View();
+        }
 
         // GET: /Home/Error
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
