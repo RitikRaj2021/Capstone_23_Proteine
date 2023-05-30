@@ -4,63 +4,51 @@
     ViewData["Title"] = "AboutMe";
 }
 
-<link href="~/css/site.css" rel="stylesheet"/>
-﻿
-
+<link href="~/css/site.css" rel="stylesheet" />
 
 <div class="text-center">
     <h1> About Me </h1>
 </div>
-<div class="row" >
+<div class="row">
     <div class="col" style="margin-inline-start:220px;">
         <div class="leftsideabtme">
-
             <div style="display: flex; align-content:center;">
-
-                <!--this is for the users name-->
-                <form method="post" action="AboutMe">
-
+                <!-- this is for the user's name -->
+                <form method="post" action="AboutMe" onsubmit="return validateForm()">
                     <div class="text-left">
                         <div>
-                            <label for="">First name:</label>
-                            <input type="text" class="form-control" id="FName" name="FirstName" required><br>
-
-                            <label for="">Last name:</label>
-                            <input type="text" class="form-control" id="LName" name="LastName" required><br>
+                            <label for="FirstName">First name:</label>
+                            <input type="text" class="form-control" id="FirstName" name="FirstName" required><br>
+                            <label for="LastName">Last name:</label>
+                            <input type="text" class="form-control" id="LastName" name="LastName" required><br>
                         </div>
-
-                        <!--This is for the users gender-->
+                        <!-- This is for the user's gender -->
                         <div>
-                            <label for="">Select your Gender:</label>
-                            <select name="Gender" type="text" class="form-control" asp-for="Gender">
-
+                            <label for="Gender">Select your Gender:</label>
+                            <select name="Gender" class="form-control" id="Gender" required>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                             </select><br>
                         </div>
-
-                        <!--This is for the users height-->
+                        <!-- This is for the user's height -->
                         <div>
-                            <label for="">Height in CM:</label>
+                            <label for="Height">Height in CM:</label>
                             <input type="number" class="form-control" id="Height" name="Height" required><br>
                         </div>
-
-                        <!--This is for the users weight-->
+                        <!-- This is for the user's weight -->
                         <div>
-                            <label for="weight">Weight in KG:</label>
+                            <label for="Weight">Weight in KG:</label>
                             <input type="number" class="form-control" id="Weight" name="Weight" required><br>
                         </div>
-
-                        <!--This is for the users date of birth-->
+                        <!-- This is for the user's date of birth -->
                         <div>
-                            <label for="">Date Of Birth:</label>
-                            <input type="date" class="form-control" id="DOB" name="DateOfBirth" required><br>
+                            <label for="DateOfBirth">Date Of Birth:</label>
+                            <input type="date" class="form-control" id="DateOfBirth" name="DateOfBirth" required><br>
                         </div>
-
-                        <!--This is for the users Dietary Options-->
+                        <!-- This is for the user's dietary options -->
                         <div>
-                            <label for="">Dietary Options:</label>
-                            <select name="DietaryOptions" type="text" class="form-control" asp-for="DietaryOptions">
+                            <label for="DietaryOptions">Dietary Options:</label>
+                            <select name="DietaryOptions" class="form-control" id="DietaryOptions">
                                 <option value="n/a">n/a</option>
                                 <option value="Vegetarian">Vegetarian</option>
                                 <option value="vegan">Vegan</option>
@@ -76,55 +64,46 @@
                                 <option value="sugar-free">Sugar-Free</option>
                             </select><br>
                         </div>
-
-                        <!--This is for the users activity-->
+                        <!-- This is for the user's activity -->
                         <div>
-                            <label for="">User Activity:</label>
-                            <select name="UserActivity" type="text" class="form-control" asp-for="UserActivity">
+                            <label for="UserActivity">User Activity:</label>
+                            <select name="UserActivity" class="form-control" id="UserActivity">
                                 <option value="Not Active">Not Active</option>
                                 <option value="Medium Active">Medium Active</option>
                                 <option value="Regular Active">Regular Active</option>
                             </select><br>
                         </div>
-
-                        <!--This is for the submit button-->
-                    </div>
-                    <div>
-                        <button style="width: 150px; margin-left: 200px; background-color: green; border-color: green;" type="submit" class="btn btn-primary">Submit</button>
+                        <!-- This is for the submit button -->
+                        <div>
+                            <button style="width: 150px; margin-left: 200px; background-color: green; border-color: green;" type="submit" class="btn btn-primary">Submit</button>
+                        </div>
                     </div>
                 </form>
             </div>
-
             <script>
                 function validateForm() {
-                    // Get values from ID
-                    var FirstName = document.getElementById("FName").value;
-                    var LastName = document.getElementById("LName").value;
-                    var Height = document.getElementById("Height").value;
-                    var Weight = document.getElementById("Weight").value;
-                    var DateOfBirth = document.getElementById("DOB").value;
+                    // Get values from inputs
+                    var firstName = document.getElementById("FirstName").value;
+                    var lastName = document.getElementById("LastName").value;
+                    var height = document.getElementById("Height").value;
+                    var weight = document.getElementById("Weight").value;
+                    var dateOfBirth = document.getElementById("DateOfBirth").value;
 
                     // Makes sure all fields are valid
-                    if (!Fname || !Lname || !Height || !Weight || !DOB) {
+                    if (!firstName || !lastName || !height || !weight || !dateOfBirth) {
                         alert("All fields are required.");
-                        return false; // Stops form Submit
+                        return false; // Stops form submit
                     }
 
-                    return true; // Form Submits
+                    return true; // Form submits
                 }
             </script>
         </div>
     </div>
-
-    <!--This is for the img alignment-->
+    <!-- This is for the image alignment -->
     <div class="col" style="margin-inline-end:120px; padding-top:70px;">
-
         <div class="rightsideabtme">
-
             <img src="~/Image/Infographicfood.png" class="width=" 450" height="550" />
-
         </div>
     </div>
 </div>
-
-
