@@ -30,10 +30,40 @@ namespace Capstone_23_Proteine.Controllers
         public IActionResult Index()
         {
             int totalCalories = CalculateTotalCalories(); // Calculate the total calories
+            int totalProtein = CalculateTotalProtein(); // Calculate the total protein
+            int totalFat = CalculateTotalFat(); // Calculate the total fat
+
             ViewBag.TotalCalories = totalCalories; // Set the totalCalories value in the ViewBag
+            ViewBag.TotalProtein = totalProtein; // Set the totalProtein value in the ViewBag
+            ViewBag.TotalFat = totalFat; // Set the totalFat value in the ViewBag
 
             return View();
         }
+
+        // CalculateTotalProtein Function
+        private int CalculateTotalProtein()
+        {
+            // Logic to calculate the total protein
+            DateTime today = DateTime.Today;
+            int totalProtein = _context.FoodIntake
+                .Where(f => f.Date.Date == today)
+                .Sum(f => f.Protein);
+            // Return the calculated total protein
+            return totalProtein;
+        }
+
+        // CalculateTotalFat Function
+        private int CalculateTotalFat()
+        {
+            // Logic to calculate the total fat
+            DateTime today = DateTime.Today;
+            int totalFat = _context.FoodIntake
+                .Where(f => f.Date.Date == today)
+                .Sum(f => f.Fat);
+            // Return the calculated total fat
+            return totalFat;
+        }
+
 
         // CalculateTotalCalories Function
         private int CalculateTotalCalories()

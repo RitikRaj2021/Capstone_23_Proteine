@@ -4,78 +4,78 @@
     ViewData["Title"] = "MyRecords";
 }
 
-
-
-
-
 <div>
     <h1 style="text-align: center;">MyRecords</h1>
     <br />
 </div>
-<div class="row">
-    <div class="col" style="margin-inline-start:220px;">
-        <div class="leftsidemyrec">
-            <!--start of base code-->
-            @{
-                // Calculate total calories for today
-                DateTime today = DateTime.Today;
-                int totalCalories = Model.Where(f => f.Date.Date == today).Sum(f => f.Calories);
-            }
 
-
-
-            <h2 style="text-align: center;">Meals</h2>
-
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>MealName</th>
-                        <th>Protein</th>
-                        <th>Calories</th>
-                        <th>Fat</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var foodIntake in Model)
-                    {
-                        <tr>
-                            <td>@foodIntake.Date.ToString("dd-MM-yyyy")</td>
-                            <td>@foodIntake.MealName</td>
-                            <td>@foodIntake.Protein</td>
-                            <td>@foodIntake.Calories</td>
-                            <td>@foodIntake.Fat</td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-
+<div style="background-color:#ffff; padding:25px; border-radius:45px; box-shadow: 15px 15px 20px rgba(0,0,0,0.05);">
+    <div class="row">
+        <div class="col">
             <div>
-                <h3 style="text-align: center;">Total Calories for Today: @totalCalories</h3>
-            </div>
-
-            <script>
-                function openWins() {
-                    window.open("../FoodIntake/FoodIntake");
+                @{
+                    // Group the food intake records by date and sort them in descending order
+                    var groupedRecords = Model.GroupBy(f => f.Date.Date).OrderByDescending(g => g.Key);
                 }
-            </script>
-
-            <form>
-                <input type="button" value="Edit" onclick="openWins()">
-            </form>
-            <!--End of base code-->
+                <h2 style="text-align: center;">Meals</h2>
+                <!-- Form for selecting a specific date -->
+                <form method="get" action="@Url.Action("MyRecords")">
+                    <div class="form-group">
+                        <label for="selectedDate">Select Date:</label>
+                        <input type="date" id="selectedDate" name="selectedDate" class="form-control" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Show Records</button>
+                </form>
+                @if (groupedRecords.Any())
+                {
+                    foreach (var group in groupedRecords)
+                    {
+                        <h3 style="text-align: center;">@group.Key.ToString("dd-MM-yyyy")</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>MealName</th>
+                                    <th>Protein</th>
+                                    <th>Calories</th>
+                                    <th>Fat</th>
+                                    <th>Action</th> <!-- Added column for action buttons -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var foodIntake in group)
+                                {
+                                    <tr>
+                                        <td>@foodIntake.Date.ToString("dd-MM-yyyy")</td>
+                                        <td>@foodIntake.MealName</td>
+                                        <td>@foodIntake.Protein</td>
+                                        <td>@foodIntake.Calories</td>
+                                        <td>@foodIntake.Fat</td>
+                                        <td>
+                                            <!--Delte btn, with a yes no confimation -->
+                                            <form asp-action="Delete" method="post" onsubmit="return confirm('Are you sure you want to delete this record?');">
+                                                <input type="hidden" name="id" value="@foodIntake.ID" />
+                                                <input type="submit" value="Delete" class="btn btn-danger" />
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+                }
+                else
+                {
+                    <p>No records found.</p>
+                }
+            </div>
         </div>
     </div>
+</div>
 
 
-
-    <!--This is for the img alignment-->
-    <div class="col" style="margin-inline-end:120px; padding-top:70px;">
-
-        <div class="rightsidemyrec">
-
-            <img src="~/Image/MOOD.png" style=" width="250" height="350px" />
-
-        </div>
+<div class="col" style="margin-inline-end:120px; padding-top:70px;">
+    <div class="rightsidemyrec">
+        <img src="~/Image/MOOD.png" width="250" height="350px" />
     </div>
 </div>

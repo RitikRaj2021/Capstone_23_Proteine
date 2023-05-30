@@ -5,6 +5,7 @@ using Capstone_23_Proteine.Models.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using System.Threading.Tasks;
+using System;
 
 namespace Capstone_23_Proteine.Controllers
 {
@@ -21,19 +22,18 @@ namespace Capstone_23_Proteine.Controllers
 
         // GET: /FoodIntake/MyRecords
         [HttpGet]
-        public async Task<IActionResult> MyRecords()
+        public async Task<IActionResult> MyRecords(DateTime? searchDate)
         {
-
             var userId = userManager.GetUserId(User);
-            var foodIntake = await applicationDbContext.FoodIntake.Where(f => f.UserId == userId).ToListAsync();
+            IQueryable<FoodIntake> foodIntakeQuery = applicationDbContext.FoodIntake.Where(f => f.UserId == userId);
+
+            if (searchDate.HasValue)
+            {
+                foodIntakeQuery = foodIntakeQuery.Where(f => f.Date.Date == searchDate.Value.Date);
+            }
+
+            var foodIntake = await foodIntakeQuery.ToListAsync();
             return View(foodIntake);
-
-            /*
-            // Retrieve all FoodIntake records from the database
-            var foodIntake = await applicationDbContext.FoodIntake.ToListAsync();
-
-            // Pass the foodIntake records to the view for display
-            return View(foodIntake);*/
         }
 
         // GET: /FoodIntake/FoodIntake
@@ -71,5 +71,27 @@ namespace Capstone_23_Proteine.Controllers
             // Redirect to the MyRecords action to display the updated food intake records
             return RedirectToAction("MyRecords");
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            // Retrieve the FoodIntake record to be deleted
+            var foodIntake = await applicationDbContext.FoodIntake.FindAsync(id);
+
+            // Check if the record exists
+            if (foodIntake == null)
+            {
+                return NotFound();
+            }
+
+            // Remove the record from the DbSet and save changes
+            applicationDbContext.FoodIntake.Remove(foodIntake);
+            await applicationDbContext.SaveChangesAsync();
+
+            // Redirect to the MyRecords action to display the updated food intake records
+            return RedirectToAction("MyRecords");
+        }
+
     }
 }
