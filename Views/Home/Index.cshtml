@@ -2,11 +2,7 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-</div>
-
-<div class="container text-center border" style="text-align: center; max-inline-size: 1900px;">
+<div class="container text-center border" style="text-align: center; max-inline-size: 1900px; background-color:white;">
     <div class="row">
         <div class="col-3 border">
             <div class="row">
@@ -20,11 +16,25 @@
                     <input type="button" value="Upload Image" onclick="OpenWins()" readonly />
                 </form>
             </div>
+            <br />
+            <br />
+            <div style="text-align:center;">
+                <p>Name: </p>
+                <p>Height: </p>
+                <p>Weight: </p>
+            </div>
         </div>
+
         <div class="col-4">
             <div class="row">
-                <p style="font-size: 12px; text-align: center; margin-inline-start: 115px;"> Daily Summary </p>
-                <p style="font-size: 50px; text-align:left; margin-inline-start:155px; color: #8DA242;"> @ViewBag.TotalCalories Calories </p>
+                <p style="font-size: 50px; text-align: center; margin-inline-start: 115px;"> Daily Summary </p>
+                <p style="font-size: 30px; text-align:left; margin-inline-start:155px; color: #8DA242;">Calories Consumed @ViewBag.TotalCalories  /1000</p>
+            </div>
+             <div class="row">
+                <p style="font-size: 30px; text-align:left; margin-inline-start:155px; color: #8DA242;">Protein Consumed @ViewBag.TotalProtein  /1000</p>
+            </div>
+             <div class="row">
+                <p style="font-size: 30px; text-align:left; margin-inline-start:155px; color: #8DA242;">Fat Consumed @ViewBag.TotalFat  /1000</p>
             </div>
             <div class="row" style="text-align: center">
                 <script>
@@ -74,4 +84,161 @@
     </div>
 </div>
 
+<br />
+<br />
+<br />
+
+
+<div style=" background-color:#ffff; padding:25px; border-radius:45px; box-shadow: 15px 15px 20px rgba(0,0,0,0.05);">
+
+    <div>
+        <h1>Recipes</h1>
+        <p>Your next meal</p>
+    </div>
+    <div id="Food" class="carousel slide">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="  cards-wrapper  ">
+
+                    <!-- first item-->
+                    <div class="card" style="width: 18rem;">
+                        <a href="@Url.Action("Crispy_Falafels","Home")"> <img class="card-img-top" src="/Image/SOme_cryspy.png" alt="Card image cap" width="150px" height="150px"> </a>
+                        <div class="card-body">
+                            <p class="card-text"> Crispy Spiced Falafels </p>
+                        </div>
+                    </div>
+
+                    <!-- secound item-->
+                    <div class="card" style="width: 18rem;">
+                        <a href="@Url.Action("Spanish_pisto","Home")"> <img class="card-img-top" src="~/Image/spanish_Something.png" alt="Card image cap" width="150px" height="150px"></a>
+                        <div class="card-body">
+                            <p class="card-text"> Spanish Pisto </p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- third item-->
+                    <div class="card" style="width: 18rem;">
+                        <a href="@Url.Action("Veggie_nachos","Home")">
+                            <img class="card-img-top" src="/Image/Nacho_veggie.png" alt="Card image cap" width="150px" height="150px">
+                            </a>
+                        <div class="card-body">
+                            <p class="card-text"> Veggie Nachos </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="carousel-item">
+
+                <div class=" cards-wrapper">
+
+                    <!-- first item-->
+                    <div class="card" style="width: 18rem;">
+                        <a href="@Url.Action("Rainbow_chicken","Home")">
+
+                        <img class="card-img-top" src="/Image/Rainbow_chickenSalad.png" alt="Card image cap" width="150px" height="150px">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text"> Rainbow Chicken Slaw </p>
+                        </div>
+                    </div>
+
+
+                    <!-- secound item-->
+                    <div class="card" style="width: 18rem;">
+                        <a href="@Url.Action("Lamb","Home")">
+                        <img class="card-img-top" src="/Image/Mediterranean-Lamb_recipeimage.png" alt="Card image cap" width="150px" height="150px">
+                       </a>
+                        <div class="card-body">
+                            <p class="card-text"> Mediterranean Lamb </p>
+                        </div>
+                    </div>
+
+
+                    <!-- third item-->
+                    <div class="card" style="width: 18rem;">
+                        <a href="@Url.Action("MEd_salad","Home")">
+
+                        <img class="card-img-top" src="/Image/Mediterranean-Salad-with-Pea-Falafels_recipeimage.png" alt="Card image cap" width="150px" height="150px">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text"> Mediterranean Salad with Pea Falafels </p>
+                        </div>
+                    </div>
+                 
+
+                </div>
+
+
+
+            </div>
+            <div class="carousel-item">
+                <div class="cards-wrapper">
+
+
+                    <!-- first item-->
+                    <div class="card" style="width: 18rem;">
+                        <a href="@Url.Action("Chicken_and_","Home")">
+                        <img class="card-img-top" src="/Image/Chicken-and-Mushroom-Filo-Parcels_recipeimage.png" alt="Card image cap" width="150px" height="150px">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text"> Chicken and Mushroom Filo Parcels </p>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- secound item-->
+                    <div class="card" style="width: 18rem;">
+                        <a href="@Url.Action("Chicken_pad","Home")">                    
+                        <img class="card-img-top" src="/Image/Quick-and-Easy-Chicken-Pad-Thai.png" alt="Card image cap" width="150px" height="150px">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text"> Quick and Easy Chicken Pad Thai </p>
+                        </div>
+                    </div>
+
+
+
+                    <!-- third item-->
+                    <div class="card" style="width: 18rem;">
+                        <a href="@Url.Action("Pie_vegg","Home")">
+                        <img class="card-img-top" src="~/Image/Veg-Cottage-Pie.png" alt="Card image cap" width="150px" height="150px">
+                         </a>
+                        <div class="card-body">
+                            <p class="card-text"> Vegetarian Cottage Pie </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            
+
+            </div>
+
+        </div>
+
+        
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#Food" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#Food" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+</div>
 

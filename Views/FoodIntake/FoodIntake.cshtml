@@ -13,40 +13,63 @@
             <img src="~/Image/Chicken.png" class="width="350" height="350"/>
         </div>
 
+        
+
+
         <div style="margin-left: 50px;">
-            <form method="post" action="FoodIntake" class="mt-5">
+            <form method="post" action="FoodIntake" class="mt-5" onsubmit="return validateForm()">
                 <div class="foodIntakeAlign , text-left">
 
                     <div class="mb-3">
-                        <label for="" class="form-label">Date</label>
-                        <input type="date" class="form-control" asp-for="Date">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="date" name="Date" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="" class="form-label">MealName</label>
-                        <input type="text" class="form-control" asp-for="MealName">
+                        <label for="mealName" class="form-label">MealName</label>
+                        <input type="text" class="form-control" id="mealName" name="MealName" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="" class="form-label">Protein</label>
-                        <input type="number" class="form-control" asp-for="Protein">
+                        <label for="protein" class="form-label">Protein (g)</label>
+                        <input type="number" class="form-control" id="protein" name="Protein" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="" class="form-label">Calories</label>
-                        <input type="number" class="form-control" asp-for="Calories">
+                        <label for="calories" class="form-label">Calories (g)</label>
+                        <input type="number" class="form-control" id="calories" name="Calories" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="" class="form-label">Fat</label>
-                        <input type="number" class="form-control" asp-for="Fat">
+                        <label for="fat" class="form-label">Fat (g)</label>
+                        <input type="number" class="form-control" id="fat" name="Fat" required>
                     </div>
 
                     <div class="submitBTNFI">
-                        <button style="background-color: #A7BC5B; border-color: #A7BC5B;  "type="submit" class="btn btn-primary">Submit</button>
+                        <button style="background-color: #A7BC5B; border-color: #A7BC5B;" type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </div>
             </form>
         </div>
+
+
+        <script>
+            function validateForm() {
+                // Get values from ID
+                var date = document.getElementById("date").value;
+                var mealName = document.getElementById("mealName").value;
+                var protein = document.getElementById("protein").value;
+                var calories = document.getElementById("calories").value;
+                var fat = document.getElementById("fat").value;
+
+                // Makes sure all fields are valid
+                if (!date || !mealName || !protein || !calories || !fat) {
+                    alert("All fields are required.");
+                    return false; // Stops form Submit
+                }
+
+                return true; // Form Submits
+            }
+        </script>
     </div>
 </div>

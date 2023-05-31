@@ -21,8 +21,10 @@ public class Program
         builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
             .AddRoles<IdentityRole>()
             .AddEntityFrameworkStores<ApplicationDbContext>();
+
         builder.Services.AddControllersWithViews();
 
+      
         builder.Services.AddTransient<IEmailSender>(serviceProvider => new EmailSender(sendGridApiKey));
 
         builder.Services.AddCoreAdmin();
@@ -97,6 +99,16 @@ public class Program
 
 
         }
+
+        app.UseEndpoints(endpoints =>
+        {
+            endpoints.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}"
+            );
+        });
+
+
         app.MapRazorPages();
 
         app.UseCoreAdminCustomUrl("adminpanel");

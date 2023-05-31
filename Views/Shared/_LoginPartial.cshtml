@@ -5,24 +5,18 @@
 <ul id="nav" class="navbar-nav">
     @if (SignInManager.IsSignedIn(User))
     {
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Landing"><font color="#8DA242"> Landing</font> </a>
-        </li>
-
 
         <li class="nav-item">
             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><font color="#8DA242"> Home</font> </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy"> <font color="#8DA242">Privacy</font></a>
-        </li>
+
 
         <li class="nav-item">
             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="MyDetails"> <font color="#FFFFFF">My Details</font></a>
 
-            <ul>
+            <ul class="dropdown">
                 <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="AboutMe" asp-action="AboutMe"> <font color="#8DA242">About Me</font></a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="AboutMe" asp-action="AboutMe"> <font color="#FFFFFF">About Me</font></a>
             </ul>
 
         </li>
@@ -31,9 +25,9 @@
         <li class="nav-item">
             <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="MyRecords"> <font color="#FFFFFF">My Records</font></a>
 
-            <ul>
+            <ul class="dropdown">
                 <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="FoodIntake"> <font color="#8DA242">FoodIntake</font></a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="FoodIntake"> <font color="#FFFFFF">FoodIntake</font></a>
             </ul>
         </li>
 
@@ -74,3 +68,19 @@
         window.open("../adminpanel");
     }
 </script>
+
+ <style>
+    /* Dropdown button */
+    .dropdown {
+        align-content:center;      
+        border:solid;
+        border-right-width:25px;
+        outline: none;
+        color: #232323;
+        background-color: #232323;
+        font-size:25px;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+    }
+
+</style>

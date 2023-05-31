@@ -30,10 +30,40 @@ namespace Capstone_23_Proteine.Controllers
         public IActionResult Index()
         {
             int totalCalories = CalculateTotalCalories(); // Calculate the total calories
+            int totalProtein = CalculateTotalProtein(); // Calculate the total protein
+            int totalFat = CalculateTotalFat(); // Calculate the total fat
+
             ViewBag.TotalCalories = totalCalories; // Set the totalCalories value in the ViewBag
+            ViewBag.TotalProtein = totalProtein; // Set the totalProtein value in the ViewBag
+            ViewBag.TotalFat = totalFat; // Set the totalFat value in the ViewBag
 
             return View();
         }
+
+        // CalculateTotalProtein Function
+        private int CalculateTotalProtein()
+        {
+            // Logic to calculate the total protein
+            DateTime today = DateTime.Today;
+            int totalProtein = _context.FoodIntake
+                .Where(f => f.Date.Date == today)
+                .Sum(f => f.Protein);
+            // Return the calculated total protein
+            return totalProtein;
+        }
+
+        // CalculateTotalFat Function
+        private int CalculateTotalFat()
+        {
+            // Logic to calculate the total fat
+            DateTime today = DateTime.Today;
+            int totalFat = _context.FoodIntake
+                .Where(f => f.Date.Date == today)
+                .Sum(f => f.Fat);
+            // Return the calculated total fat
+            return totalFat;
+        }
+
 
         // CalculateTotalCalories Function
         private int CalculateTotalCalories()
@@ -97,6 +127,43 @@ namespace Capstone_23_Proteine.Controllers
             return View();
         }
 
+        public IActionResult Crispy_Falafels()
+        {
+            return View();
+        }
+        public IActionResult Spanish_pisto()
+        {
+            return View();
+        }
+        public IActionResult Veggie_nachos()
+        {
+            return View();
+        }
+        public IActionResult Rainbow_chicken()
+        {
+            return View();
+        }
+        public IActionResult Lamb()
+        {
+            return View();
+        }
+        public IActionResult MEd_salad()
+        {
+            return View();
+        }
+        public IActionResult Chicken_and_()
+        {
+            return View();
+        }
+        public IActionResult Chicken_pad()
+        {
+            return View();
+        }
+
+        public IActionResult Pie_vegg()
+        {
+            return View();
+        }
 
         // GET: /Home/Error
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
