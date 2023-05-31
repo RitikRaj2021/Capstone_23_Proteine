@@ -44,5 +44,7 @@ namespace Capstone_23_Proteine.Data
 
         public DbSet<UserProfile> UserProfile { get; set; }
 
+        public DbSet<SetGoals> SetGoals { get; set; }
+
     }
 }
