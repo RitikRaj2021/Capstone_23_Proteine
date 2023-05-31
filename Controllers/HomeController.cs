@@ -79,6 +79,11 @@ namespace Capstone_23_Proteine.Controllers
             return View();
         }
 
+        public IActionResult ContactUs()
+        {
+            return View();
+        }
+
         public IActionResult Sleep()
         {
             return View();
