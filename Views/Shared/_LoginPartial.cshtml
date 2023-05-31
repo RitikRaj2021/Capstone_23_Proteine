@@ -1,4 +1,4 @@
-﻿﻿@using Microsoft.AspNetCore.Identity
+﻿﻿﻿@using Microsoft.AspNetCore.Identity
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
@@ -6,32 +6,24 @@
     @if (SignInManager.IsSignedIn(User))
     {
 
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><font color="#8DA242"> Home</font> </a>
-        </li>
 
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs"><font color="#8DA242"> About Us</font> </a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><font color="#8DA242">Dashboard</font> </a>
         </li>
 
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="MyDetails"> <font color="#FFFFFF">My Details</font></a>
-
-            <ul class="dropdown">
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="AboutMe" asp-action="AboutMe"> <font color="#FFFFFF">About Me</font></a>
-            </ul>
-
-        </li>
-
-
+       
         <li class="nav-item">
             <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="MyRecords"> <font color="#FFFFFF">My Records</font></a>
-
+            <!--
             <ul class="dropdown">
                 <li class="nav-item">
                     <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="FoodIntake"> <font color="#FFFFFF">FoodIntake</font></a>
-            </ul>
+            </ul>-->
+        </li>
+
+
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="FoodIntake"> <font color="#FFFFFF">Food Intake</font></a>
         </li>
 
 
@@ -53,6 +45,16 @@
     else
     {
         <li class="nav-item">
+             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Landing"><font color="#fffff"> Home</font> </a>
+        </li>
+        <li class="nav-item">
+             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs"><font color="#fffff"> About Us</font> </a>
+        </li>
+        <li class="nav-item">
+             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs"><font color="#fffff"> Contact Us</font> </a>
+        </li>
+
+        <li class="nav-item">
             <a class="nav-link text-light" asp-area="Identity" asp-page="/Account/Register">Register</a>
         </li>
         <li class="nav-item">
@@ -67,16 +69,16 @@
     }
 </script>
 
- <style>
+<style>
     /* Dropdown button */
     .dropdown {
-        align-content:center;      
-        border:solid;
-        border-right-width:25px;
+        align-content: center;
+        border: solid;
+        border-right-width: 25px;
         outline: none;
         color: #232323;
         background-color: #232323;
-        font-size:25px;
+        font-size: 25px;
         font-family: inherit; /* Important for vertical align on mobile phones */
         margin: 0; /* Important for vertical align on mobile phones */
     }
