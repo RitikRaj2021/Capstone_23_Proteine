@@ -48,6 +48,13 @@
             </div>
         </div>
 
+
+
+
+
+
+
+
         <div class="col-4">
             <div class="row">
                 <p style="font-size: 50px; text-align: center; margin-inline-start: 115px;"> Daily Summary </p>
@@ -59,6 +66,17 @@
              <div class="row">
                 <p style="font-size: 30px; text-align:left; margin-inline-start:155px; color: #8DA242;">Fat Consumed @ViewBag.TotalFat  /1000</p>
             </div>
+
+            <div>
+                <button id="setGoalsBtn" style="width: 150px; margin-left: 200px; background-color: green; border-color: green;" type="submit" class="btn btn-primary">Set Goals</button>
+
+                <script>
+                    document.getElementById("setGoalsBtn").addEventListener("click", function() {
+                        window.open("../Home/goalSet", "_blank", "width=400,height=400");
+                    });
+                </script>
+            </div>
+
             <div class="row" style="text-align: center">
                 <script>
                     function OpenWin() {
@@ -110,6 +128,15 @@
 <br />
 <br />
 <br />
+
+
+
+
+
+
+
+
+
 
 
 <div style=" background-color:#ffff; padding:25px; border-radius:45px; box-shadow: 15px 15px 20px rgba(0,0,0,0.05);">
