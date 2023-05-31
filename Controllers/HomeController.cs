@@ -92,7 +92,10 @@ namespace Capstone_23_Proteine.Controllers
         {
             return View();
         }
-
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
 
         // GET: /Home/AboutMe
         public IActionResult AboutMe()
