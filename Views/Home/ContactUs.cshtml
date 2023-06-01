@@ -72,7 +72,7 @@
                 </form>
 
                 <div class="text-center text-md-left">
-                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                    <a class="btn btn-primary" asp-action="ContactUsConfirm" asp-controller="Home">Send</a>
                 </div>
                 <div class="status"></div>
             </div>
@@ -102,4 +102,17 @@
 
     </section>
     <!--Section: Contact v.2-->
+
+   
 </div>
+
+
+
+<script>
+    function openContactUsConfirm() {
+        window.open("../Home/ContactUsConfirm");
+    }
+</script>
+
+
+
