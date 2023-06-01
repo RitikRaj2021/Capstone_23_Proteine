@@ -101,6 +101,34 @@ namespace Capstone_23_Proteine.Data.Migrations
                     b.ToTable("FoodIntake");
                 });
 
+            modelBuilder.Entity("Capstone_23_Proteine.Models.Domain.SetGoals", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("SetCalories")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SetFat")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SetProtein")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("SetGoals");
+                });
+
             modelBuilder.Entity("Capstone_23_Proteine.Models.Domain.UserProfile", b =>
                 {
                     b.Property<Guid>("Id")
@@ -354,6 +382,15 @@ namespace Capstone_23_Proteine.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Capstone_23_Proteine.Models.Domain.SetGoals", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
 
                     b.Navigation("User");
                 });

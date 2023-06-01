@@ -26,6 +26,11 @@ namespace Capstone_23_Proteine.Controllers
             return View();
         }
 
+        public IActionResult ContactUs()
+        {
+            return View();
+        }
+
         // GET: /Home/Index
         public IActionResult Index()
         {
@@ -92,7 +97,10 @@ namespace Capstone_23_Proteine.Controllers
         {
             return View();
         }
-
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
 
         // GET: /Home/AboutMe
         public IActionResult AboutMe()
@@ -164,6 +172,11 @@ namespace Capstone_23_Proteine.Controllers
         }
 
         public IActionResult Pie_vegg()
+        {
+            return View();
+        }
+
+        public IActionResult goalSet()
         {
             return View();
         }
