@@ -2,73 +2,82 @@
     ViewData["Title"] = "Landing";
 }
 
-<div style=" background-color:#FAF0DC; padding:50px; border-radius:25px;">
-  
+
+
+<!--<div style=" background-color:#FAF0DC; padding:50px; border-radius:25px;">>
+
 
     <!--This is a simple image next to some text, will be changed later on -->
 
-        <div class="clearfix" style="padding: 80px;">
-            <img src="~/Image/Cereal.png" class="col-md-6 float-md-end mb-3 ms-md-3" width="350" height="350" alt="~/Image/ProteineLogo.png">
-       
-
-            <h1 style="font-weight:bold;">
-                Good health starts with what you eat..
-            </h1>
-
-            <p>
-                Want to eat more mindfully? Track meals, learn about your habits, and reach your goals with Proteine.
+<div style=" background-color:#ffff; padding:25px; border-radius:45px; box-shadow: 15px 15px 20px rgba(0,0,0,0.05);">
+    <div class="clearfix" style="padding: 60px;">
+        <img src="~/Image/Cereal.png" class="col-md-6 float-md-end mb-3 ms-md-3" width="400" height="300" alt="~/Image/ProteineLogo.png">
 
 
-            </p>
-        <button type="button" class="btn btn-primary btn-lg" style="font-weight:bold; background-color: #A7BC5B">START FOR FREE</button>
+        <h1 style="font-weight:bold;">
+            Good health starts with what you eat..
+        </h1>
 
-        </div>   
+        <p>
+            Want to eat more mindfully? Track meals, learn about your habits, and reach your goals with Proteine.
+        </p>
+        <br>
 
-    <!--This is a simple image next to some text, will be changed later on -->
+            <button type="button" onclick="location.href= 'https://proteine.life/Identity/Account/Register'" class="btn btn-primary btn-lg" style="font-weight:bold; background-color: #A7BC5B">START FOR FREE</button>
 
-        <div class="clearfix" style="padding: 80px;">
+    </div>
+</div>
+<br />
+<br />
 
-          <img style="padding-right: 30px;" src="~/Image/Chicken.png" class="col-md-6 float-md-start mb-3 ms-md-3" width="250" height="250" alt="~/Image/Chicken.png">
-          <div>
+<!--These are the main Images and Text that will be used for the landing page -->
+<div style=" background-color:#ffff; padding:25px; border-radius:45px; box-shadow: 15px 15px 20px rgba(0,0,0,0.05);">
+    <div class="clearfix" style="padding: 60px;">
+
+        <img style="padding-right: 30px;" src="~/Image/Chicken.png" class="col-md-6 float-md-start mb-3 ms-md-3" width="250" height="250" alt="~/Image/Chicken.png">
+        <div>
             <h1 style="font-weight:bold;">
                 Log from over 14 million foods..
             </h1>
-          </div>
-                <p>
-                    <div style="margin-left;">
-                        See a breakdown of calories and nutrients, compare serving sizes, and discover how the food you eat supports your goals.
-                    </div>
-                </p>
         </div>
-        
+        <p>
+            <div style="margin-left">
+                See a breakdown of calories and nutrients, compare serving sizes, and discover how the food you eat supports your goals.
+            </div>
+        </p>
+    </div>
+</div>
+<br />
+<br />
 
-        <div class="clearfix" style="padding: 80px;">
-            <img src="~/Image/FruitBowl.png" class="col-md-6 float-md-end mb-3 ms-md-3" width="350" height="350" alt="~/Image/ProteineLogo.png">
-       
-
-            <h1 style="font-weight:bold;">
-                Set Your Goals
-            </h1>
-
-            <p>
-                Tell us what you want to acheive and receive personalized goals. Reach your goals and continue to set new ones for a happier, healthier you!
-            </p>
-        </div>  
+<div style=" background-color:#ffff; padding:25px; border-radius:45px; box-shadow: 15px 15px 20px rgba(0,0,0,0.05);">
+    <div class="clearfix" style="padding: 60px;">
+        <img src="~/Image/FruitBowl.png" class="col-md-6 float-md-end mb-3 ms-md-3" width="350" height="350" alt="~/Image/ProteineLogo.png">
 
 
-    <br />
-    <br />
-        
-        <div class="clearfix" style="padding: 30px; text-align:center;">
         <h1 style="font-weight:bold;">
-                The Tools for Your Goals
-            </h1>
+            Set Your Goals
+        </h1>
 
-            <p>
-                Trying to lose weight, tone up, lower your BMI, or invest in your overall health? We give you the right features to get there.
-            </p>
+        <p>
+            Tell us what you want to acheive and receive personalized goals. Reach your goals and continue to set new ones for a happier, healthier you!
+        </p>
+    </div>
+</div>
+<br />
+<br />
 
-        </div>
+<div style=" background-color:#ffff; padding:25px; border-radius:45px; box-shadow: 15px 15px 20px rgba(0,0,0,0.05);">
+    <div class="clearfix" style="padding: 30px; text-align:center;">
+        <h1 style="font-weight:bold;">
+            The Tools for Your Goals
+        </h1>
+
+        <p>
+            Trying to lose weight, tone up, lower your BMI, or invest in your overall health? We give you the right features to get there.
+        </p>
+
+    </div>
 
     <!-- here is a card group for the landing page where there is information on each picture-->
 
@@ -76,7 +85,7 @@
         <div class="card" style="border-color:transparent; text-align:center;">
             <img class="card-img-top " style="width: 200px; margin-inline-start: 100px;" src="~/Image/book.png" alt="book">
             <div class="card-body">
-                <h5 class="card-title" style="font-weight:bold;" >Learn. Track. Improve.</h5>
+                <h5 class="card-title" style="font-weight:bold;">Learn. Track. Improve.</h5>
                 <p class="card-text">Keeping a food diary helps you understand your habits and increases your likelihood of hitting your goals.</p>
             </div>
         </div>
@@ -84,94 +93,55 @@
         <div class="card" style="border-color:transparent; text-align:center;">
             <img class="card-img-top " style="width: 200px; margin-inline-start: 100px;" src="~/Image/logging.png" alt="logging">
             <div class="card-body">
-                <h5 class="card-title" style="font-weight:bold;" >Logging Simplified.</h5>
+                <h5 class="card-title" style="font-weight:bold;">Logging Simplified.</h5>
                 <p class="card-text">Scan barcodes, save meals and recipes, and use Quick Tools for fast and easy food tracking.</p>
-                
+
             </div>
         </div>
         <br />
         <div class="card" style="border-color:transparent; text-align:center;">
-            <img class="card-img-top "  style="width: 200px; margin-inline-start: 100px;" src="~/Image/shoe.png" alt="shoe" >
+            <img class="card-img-top " style="width: 200px; margin-inline-start: 100px;" src="~/Image/shoe.png" alt="shoe">
             <div class="card-body">
-                <h5 class="card-title" style="font-weight:bold;" >Stay Motivated.</h5>
+                <h5 class="card-title" style="font-weight:bold;">Stay Motivated.</h5>
                 <p class="card-text">Join the World’s Largest Fitness Community for advice, tips, and support 24/7.</p>
             </div>
         </div>
     </div>
-
-    <br />
-    <br />
-    <br />
-    <br />
-
-    <!--Here is a sliddeshow full of pictures of the foods that may be recommended to users-->
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="~/Image/Cereal.png" class="d-block w-100" width="600" height="600" alt="~/Image/Cereal.png">
-            </div>
-            <div class="carousel-item">
-                <img src="~/Image/Chicken.png" class="d-block w-100" width="600" height="600" alt="~/Image/Chicken.png">
-            </div>
-            <div class="carousel-item">
-                <img src="~/Image/FruitBowl.png" class="d-block w-100" width="600" height="600" alt="~/Image/FruitBowl.png">
-            </div>
-            <div class="carousel-item">
-                <img src="~/Image/VegMeal.png" class="d-block w-100" width="600" height="600" alt="~/Image/VegMeal.png">
-            </div>
-            <div class="carousel-item">
-                <img src="~/Image/anotherinfo.png" class="d-block w-100" width="600" height="600" alt="~/Image/anotherinfo.png">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-     
 </div>
 
+<br />
+<br />
+<br />
+<br />
 
+<!--Here is a sliddeshow full of pictures of the foods that may be recommended to users-->
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/Image/Cereal.png" class="d-block w-100" width="600" height="600" alt="~/Image/Cereal.png">
+        </div>
+        <div class="carousel-item">
+            <img src="~/Image/Chicken.png" class="d-block w-100" width="600" height="600" alt="~/Image/Chicken.png">
+        </div>
+        <div class="carousel-item">
+            <img src="~/Image/FruitBowl.png" class="d-block w-100" width="600" height="600" alt="~/Image/FruitBowl.png">
+        </div>
+        <div class="carousel-item">
+            <img src="~/Image/VegMeal.png" class="d-block w-100" width="600" height="600" alt="~/Image/VegMeal.png">
+        </div>
+        <div class="carousel-item">
+            <img src="~/Image/anotherinfo.png" class="d-block w-100" width="600" height="600" alt="~/Image/anotherinfo.png">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-             
+<br />
+<br />
