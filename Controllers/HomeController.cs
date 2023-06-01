@@ -36,14 +36,20 @@ namespace Capstone_23_Proteine.Controllers
         {
             int totalCalories = CalculateTotalCalories(); // Calculate the total calories
             int totalProtein = CalculateTotalProtein(); // Calculate the total protein
-            int totalFat = CalculateTotalFat(); // Calculate the total fat
+            int totalFat = CalculateTotalFat(); // Calculate the total fat          
+
+            //string etCalories = setCalories;
 
             ViewBag.TotalCalories = totalCalories; // Set the totalCalories value in the ViewBag
             ViewBag.TotalProtein = totalProtein; // Set the totalProtein value in the ViewBag
             ViewBag.TotalFat = totalFat; // Set the totalFat value in the ViewBag
 
+            /*ViewBag.SetCalories = setCalories; // Set the totalCalories value in the ViewBag
+            ViewBag.SetProtein = setProtein; // Set the totalProtein value in the ViewBag
+            ViewBag.SetFat = setFat; // Set the totalFat value in the ViewBag*/
 
-            
+
+
 
             return View();
         }
