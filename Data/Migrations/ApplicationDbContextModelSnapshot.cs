@@ -87,6 +87,10 @@ namespace Capstone_23_Proteine.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("MealType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Protein")
                         .HasColumnType("int");
 

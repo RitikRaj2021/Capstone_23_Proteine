@@ -60,6 +60,7 @@ namespace Capstone_23_Proteine.Controllers
                 Protein = foodIntakeRequest.Protein,
                 Calories = foodIntakeRequest.Calories,
                 Fat = foodIntakeRequest.Fat,
+                MealType = foodIntakeRequest.MealType,
                 MealName = foodIntakeRequest.MealName,
                 Date = foodIntakeRequest.Date
             };
@@ -92,6 +93,31 @@ namespace Capstone_23_Proteine.Controllers
             // Redirect to the MyRecords action to display the updated food intake records
             return RedirectToAction("MyRecords");
         }
+
+       /* [HttpPost]
+        public async Task<IActionResult> SetGoals(SetGoalsViewModel SetGoalsRequest)
+        {
+            // Retrieve the current user
+            var user = await userManager.GetUserAsync(User);
+            var userId = user.Id;
+
+            // Create a new FoodIntake object with the user-provided data
+            var setGoals = new SetGoals()
+            {
+                ID = Guid.NewGuid(),
+                UserId = userId,
+                SetProtein = SetGoalsRequest.SetProtein,
+                SetCalories = SetGoalsRequest.SetCalories,
+                SetFat = SetGoalsRequest.SetFat,
+            };
+
+            // Add the FoodIntake object to the FoodIntake DbSet and save changes to the database
+            await applicationDbContext.SetGoals.AddAsync(setGoals);
+            await applicationDbContext.SaveChangesAsync();
+
+            // Redirect to the MyRecords action to display the updated food intake records
+            return RedirectToAction("Index");
+        }*/
 
     }
 }
