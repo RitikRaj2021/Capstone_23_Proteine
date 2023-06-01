@@ -88,7 +88,7 @@
                         window.open("/FoodIntake/FoodIntake");
                     }
                 </script>
-                <input type="button" value="Add Meal" onclick="OpenWin()" style="margin-inline-start:170px; width: 300px; background-color: #A7BC5B; border-color: #A7BC5B ;">
+                <input type="button" value="Add Meal" onclick="OpenWin()" onchange="calculateValues()" style="margin-inline-start:170px; width: 300px; background-color: #A7BC5B; border-color: #A7BC5B ;">
                 <label for="Activity"></label>
                 <select name="Activity" id="Activity" style="margin-inline-start:170px; width:300px;">
                     <option value="User Activity">User Activity</option>
@@ -99,6 +99,42 @@
                 <input type="submit" id="BTNSub" value="Submit" style="margin-inline-start:170px; width:300px; background-color: #A7BC5B; border-color: #A7BC5B ;" />
             </div>
         </div>
+
+        <script>
+            function calculateValues() {
+                // Get the selected option
+                var activityDropdown = document.getElementById("Activity");
+                var selectedOption = activityDropdown.options[activityDropdown.selectedIndex].value;
+
+                // Get the current values
+                var calories = parseFloat(document.getElementById("caloriesValue").textContent);
+                var protein = parseFloat(document.getElementById("proteinValue").textContent);
+                var fat = parseFloat(document.getElementById("fatValue").textContent);
+
+                // Define the multiplier based on the selected option
+                var multiplier;
+                if (selectedOption === "Regular Active") {
+                    multiplier = 3;
+                } else if (selectedOption === "Medium Active") {
+                    multiplier = 2;
+                } else if (selectedOption === "Not Active") {
+                    multiplier = 1.5;
+                } else {
+                    multiplier = 1; // Default multiplier if no option is selected
+                }
+
+                // Calculate the new values
+                var newCalories = calories * multiplier;
+                var newProtein = protein * multiplier;
+                var newFat = fat * multiplier;
+
+                // Update the displayed values
+                document.getElementById("caloriesValue").textContent = newCalories.toFixed(2);
+                document.getElementById("proteinValue").textContent = newProtein.toFixed(2);
+                document.getElementById("fatValue").textContent = newFat.toFixed(2);
+            }
+        </script>
+
         <div class="col border" style=" margin-inline-start: 200px ;">
             <div class="card-group">
                 <div class="card-title">
