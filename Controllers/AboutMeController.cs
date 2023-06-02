@@ -3,6 +3,9 @@ using Capstone_23_Proteine.Models;
 using Capstone_23_Proteine.Models.Domain;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
+using System;
+using System.Threading.Tasks;
+using System.Linq;
 
 namespace Capstone_23_Proteine.Controllers
 {
@@ -30,6 +33,15 @@ namespace Capstone_23_Proteine.Controllers
         {
             var user = await userManager.GetUserAsync(User);
             var userId = user.Id;
+
+            // Retrieve the existing AboutMe entry for the user, if it exists
+            var existingAboutMe = applicationDbContext.AboutMe.FirstOrDefault(a => a.UserId == userId);
+
+            if (existingAboutMe != null)
+            {
+                // Delete the existing entry
+                applicationDbContext.AboutMe.Remove(existingAboutMe);
+            }
 
             // Create a new AboutMe object with the user-provided data
             var aboutme = new AboutMe()
