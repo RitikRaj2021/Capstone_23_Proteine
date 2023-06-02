@@ -32,11 +32,15 @@ namespace Capstone_23_Proteine.Controllers
         }
 
         // GET: /Home/Index
+        [Authorize]
         public IActionResult Index()
         {
             int totalCalories = CalculateTotalCalories(); // Calculate the total calories
             int totalProtein = CalculateTotalProtein(); // Calculate the total protein
             int totalFat = CalculateTotalFat(); // Calculate the total fat          
+
+            // Retrieve the user-specific data, for example, from a database
+            AboutMeViewModel aboutMeData = GetAboutMeDataForLoggedInUser();
 
             //string etCalories = setCalories;
 
@@ -48,8 +52,14 @@ namespace Capstone_23_Proteine.Controllers
             ViewBag.SetProtein = setProtein; // Set the totalProtein value in the ViewBag
             ViewBag.SetFat = setFat; // Set the totalFat value in the ViewBag*/
 
-
-
+            // Pass the data to the view using ViewBag
+            ViewBag.FirstName = aboutMeData.FirstName;
+            ViewBag.Gender = aboutMeData.Gender;
+            ViewBag.Height = aboutMeData.Height;
+            ViewBag.Weight = aboutMeData.Weight;
+            ViewBag.DateOfBirth = aboutMeData.DateOfBirth;
+            ViewBag.DietaryOptions = aboutMeData.DietaryOptions;
+            ViewBag.UserActivity = aboutMeData.UserActivity;
 
             return View();
         }
@@ -91,14 +101,43 @@ namespace Capstone_23_Proteine.Controllers
             return totalCalories;
         }
 
+        private AboutMeViewModel GetAboutMeDataForLoggedInUser()
+        {
+            // Identify the logged-in user (example using User.Identity.Name)
+            string loggedInUserName = User.Identity.Name;
+
+            // Retrieve user data from the database using the logged-in user's username or ID
+            User user = _context.Users.FirstOrDefault(u => u.UserName == loggedInUserName);
+
+            // Check if the user exists in the database
+            if (user != null)
+            {
+                // Map the user data to the AboutMeViewModel object
+                AboutMeViewModel aboutMeData = new AboutMeViewModel
+                {
+                    FirstName = user.FirstName,
+                    Gender = user.Gender,
+                    Height = user.Height,
+                    Weight = user.Weight,
+                    DateOfBirth = user.DateOfBirth,
+                    DietaryOptions = user.DietaryOptions,
+                    UserActivity = user.UserActivity
+                };
+
+                return aboutMeData;
+            }
+
+            // If the user does not exist, return null or handle the situation accordingly
+            return null;
+        }
 
         // GET: /Home/Privacy
-        [Authorize(Roles = "Admin")]
         public IActionResult Privacy()
         {
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult Admin()
         {
             return View();
@@ -109,11 +148,12 @@ namespace Capstone_23_Proteine.Controllers
         }
 
         // GET: /Home/AboutMe
+        [Authorize]
         public IActionResult AboutMe()
         {
             return View();
         }
-
+        [Authorize]
         // GET: /Home/MyDetails
         public IActionResult MyDetails()
         {
@@ -121,57 +161,69 @@ namespace Capstone_23_Proteine.Controllers
         }
 
         // GET: /Home/MyRecords
+        [Authorize]
         public IActionResult MyRecords()
         {
             return View();
         }
 
+        [Authorize]
         public IActionResult Sleep()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Mediterranean_Diet()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Mood()
         {
             return View();
         }
 
+        [Authorize]
         public IActionResult Crispy_Falafels()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Spanish_pisto()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Veggie_nachos()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Rainbow_chicken()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Lamb()
         {
             return View();
         }
+        [Authorize]
         public IActionResult MEd_salad()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Chicken_and_()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Chicken_pad()
         {
             return View();
         }
-
+            
         public IActionResult Pie_vegg()
         {
             return View();
