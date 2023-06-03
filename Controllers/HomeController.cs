@@ -37,12 +37,9 @@ namespace Capstone_23_Proteine.Controllers
         {
             int totalCalories = CalculateTotalCalories(); // Calculate the total calories
             int totalProtein = CalculateTotalProtein(); // Calculate the total protein
-            int totalFat = CalculateTotalFat(); // Calculate the total fat          
+            int totalFat = CalculateTotalFat(); // Calculate the total fat                    
 
-            // Retrieve the user-specific data, for example, from a database
-            AboutMeViewModel aboutMeData = GetAboutMeDataForLoggedInUser();
-
-            //string etCalories = setCalories;
+            //string SetCalories = setCalories;
 
             ViewBag.TotalCalories = totalCalories; // Set the totalCalories value in the ViewBag
             ViewBag.TotalProtein = totalProtein; // Set the totalProtein value in the ViewBag
@@ -52,16 +49,7 @@ namespace Capstone_23_Proteine.Controllers
             ViewBag.SetProtein = setProtein; // Set the totalProtein value in the ViewBag
             ViewBag.SetFat = setFat; // Set the totalFat value in the ViewBag*/
 
-            // Pass the data to the view using ViewBag
-            ViewBag.FirstName = aboutMeData.FirstName;
-            ViewBag.Gender = aboutMeData.Gender;
-            ViewBag.Height = aboutMeData.Height;
-            ViewBag.Weight = aboutMeData.Weight;
-            ViewBag.DateOfBirth = aboutMeData.DateOfBirth;
-            ViewBag.DietaryOptions = aboutMeData.DietaryOptions;
-            ViewBag.UserActivity = aboutMeData.UserActivity;
-
-            return View();
+             return View();
         }
 
         // CalculateTotalProtein Function
@@ -100,37 +88,7 @@ namespace Capstone_23_Proteine.Controllers
             // Return the calculated total calories
             return totalCalories;
         }
-
-        private AboutMeViewModel GetAboutMeDataForLoggedInUser()
-        {
-            // Identify the logged-in user (example using User.Identity.Name)
-            string loggedInUserName = User.Identity.Name;
-
-            // Retrieve user data from the database using the logged-in user's username or ID
-            User user = _context.Users.FirstOrDefault(u => u.UserName == loggedInUserName);
-
-            // Check if the user exists in the database
-            if (user != null)
-            {
-                // Map the user data to the AboutMeViewModel object
-                AboutMeViewModel aboutMeData = new AboutMeViewModel
-                {
-                    FirstName = user.FirstName,
-                    Gender = user.Gender,
-                    Height = user.Height,
-                    Weight = user.Weight,
-                    DateOfBirth = user.DateOfBirth,
-                    DietaryOptions = user.DietaryOptions,
-                    UserActivity = user.UserActivity
-                };
-
-                return aboutMeData;
-            }
-
-            // If the user does not exist, return null or handle the situation accordingly
-            return null;
-        }
-
+               
         // GET: /Home/Privacy
         public IActionResult Privacy()
         {
@@ -227,9 +185,9 @@ namespace Capstone_23_Proteine.Controllers
         public IActionResult Pie_vegg()
         {
             return View();
-        }
+        }   
 
-        public IActionResult goalSet()
+        public IActionResult SetGoals()
         {
             return View();
         }
