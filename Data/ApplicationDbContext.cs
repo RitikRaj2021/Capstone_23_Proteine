@@ -22,19 +22,25 @@ namespace Capstone_23_Proteine.Data
                 .WithMany() // User entity can have multiple AboutMe entries
                 .HasForeignKey(a => a.UserId); // Foreign key is UserId
 
+            // Configure the one-to-many relationship between SetGoals and User
+            builder.Entity<SetGoals>()
+                .HasOne(u => u.User) // SetGoals entity has one User
+                .WithMany() // User entity can have multiple SetGoals entries
+                .HasForeignKey(u => u.UserId); // Foreign key is UserId
+
             // Configure the one-to-many relationship between FoodIntake and User
             builder.Entity<FoodIntake>()
                 .HasOne(f => f.User) // FoodIntake entity has one User
                 .WithMany() // User entity can have multiple FoodIntake entries
                 .HasForeignKey(f => f.UserId); // Foreign key is UserId
 
-
-            // Configure the one-to-many relationship between FoodIntake and User
-            builder.Entity<UserProfile>()
-                .HasOne(u => u.User) // FoodIntake entity has one User
-                .WithMany() // User entity can have multiple FoodIntake entries
-                .HasForeignKey(u => u.UserId); // Foreign key is UserId
+            
         }
+
+
+
+        // DbSet for the SetGoals entity
+        public DbSet<SetGoals> SetGoals { get; set; }
 
         // DbSet for the AboutMe entity
         public DbSet<AboutMe> AboutMe { get; set; }
@@ -42,9 +48,6 @@ namespace Capstone_23_Proteine.Data
         // DbSet for the FoodIntake entity
         public DbSet<FoodIntake> FoodIntake { get; set; }
 
-        public DbSet<UserProfile> UserProfile { get; set; }
-
-        public DbSet<SetGoals> SetGoals { get; set; }
 
     }
 }

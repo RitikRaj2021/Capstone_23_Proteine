@@ -1,0 +1,66 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div style="background-color:#FFFF; padding:50px; border-radius:25px;">
+    <div class="text-center">
+        <h1> Set your Goals </h1>
+    </div>
+    <div style="display: flex; align-content:center;">
+        <div class="margin-left">
+            <br />
+            <br />
+            <img src="~/Image/MOOD.png" class="width=" 350" height="350" />
+        </div>
+
+
+
+
+        <div style="margin-left: 50px;">
+            <form method="post" action="SetGoals" class="mt-5" onsubmit="return validateForm()">
+                <div class="foodIntakeAlign , text-left">                                       
+                    
+                    <div class="mb-3">
+                        <label for="SetProtein" class="form-label">Set Protein Goals (g)</label>
+                        <input type="number" class="form-control" id="SetProtein" name="SetProtein" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="SetCalories" class="form-label">Set Calories Goals (g)</label>
+                        <input type="number" class="form-control" id="SetCalories" name="SetCalories" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="SetFat" class="form-label">Set Fat Goals (g)</label>
+                        <input type="number" class="form-control" id="SetFat" name="SetFat" required>
+                    </div>
+
+                    <div class="submitBTNFI">
+                        <button style="background-color: #A7BC5B; border-color: #A7BC5B;" type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <script>
+            function validateForm() {
+                // Get values from ID
+               
+               
+                var SetProtein = document.getElementById("SetProtein").value;
+                var SetCalories = document.getElementById("SetCalories").value;
+                var SetFat = document.getElementById("SetFat").value;
+
+                // Makes sure all fields are valid
+                if (!SetProtein || !SetCalories || !SetFat) {
+                    alert("All fields are required.");
+                    return false; // Stops form Submit
+                }
+
+                return true; // Form Submits
+            }
+        </script>
+    </div>
+</div>

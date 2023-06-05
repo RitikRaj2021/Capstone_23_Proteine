@@ -32,13 +32,14 @@ namespace Capstone_23_Proteine.Controllers
         }
 
         // GET: /Home/Index
+        [Authorize]
         public IActionResult Index()
         {
             int totalCalories = CalculateTotalCalories(); // Calculate the total calories
             int totalProtein = CalculateTotalProtein(); // Calculate the total protein
-            int totalFat = CalculateTotalFat(); // Calculate the total fat          
+            int totalFat = CalculateTotalFat(); // Calculate the total fat                    
 
-            //string etCalories = setCalories;
+            //string SetCalories = setCalories;
 
             ViewBag.TotalCalories = totalCalories; // Set the totalCalories value in the ViewBag
             ViewBag.TotalProtein = totalProtein; // Set the totalProtein value in the ViewBag
@@ -47,11 +48,8 @@ namespace Capstone_23_Proteine.Controllers
             /*ViewBag.SetCalories = setCalories; // Set the totalCalories value in the ViewBag
             ViewBag.SetProtein = setProtein; // Set the totalProtein value in the ViewBag
             ViewBag.SetFat = setFat; // Set the totalFat value in the ViewBag*/
-
-
-
-
-            return View();
+                        
+             return View();
         }
 
         // CalculateTotalProtein Function
@@ -90,15 +88,14 @@ namespace Capstone_23_Proteine.Controllers
             // Return the calculated total calories
             return totalCalories;
         }
-
-
+               
         // GET: /Home/Privacy
-        [Authorize(Roles = "Admin")]
         public IActionResult Privacy()
         {
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult Admin()
         {
             return View();
@@ -109,11 +106,12 @@ namespace Capstone_23_Proteine.Controllers
         }
 
         // GET: /Home/AboutMe
+        [Authorize]
         public IActionResult AboutMe()
         {
             return View();
         }
-
+        [Authorize]
         // GET: /Home/MyDetails
         public IActionResult MyDetails()
         {
@@ -121,6 +119,7 @@ namespace Capstone_23_Proteine.Controllers
         }
 
         // GET: /Home/MyRecords
+        [Authorize]
         public IActionResult MyRecords()
         {
             return View();
@@ -131,58 +130,69 @@ namespace Capstone_23_Proteine.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult Sleep()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Mediterranean_Diet()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Mood()
         {
             return View();
         }
 
+        [Authorize]
         public IActionResult Crispy_Falafels()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Spanish_pisto()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Veggie_nachos()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Rainbow_chicken()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Lamb()
         {
             return View();
         }
+        [Authorize]
         public IActionResult MEd_salad()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Chicken_and_()
         {
             return View();
         }
+        [Authorize]
         public IActionResult Chicken_pad()
         {
             return View();
         }
-
+            
         public IActionResult Pie_vegg()
         {
             return View();
-        }
+        }   
 
-        public IActionResult goalSet()
+        public IActionResult SetGoals()
         {
             return View();
         }

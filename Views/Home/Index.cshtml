@@ -1,4 +1,4 @@
-﻿@model Capstone_23_Proteine.Models.AboutMeViewModel
+﻿@model Capstone_23_Proteine.Models.Domain.AboutMe
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -27,14 +27,7 @@
             <div class="aboutmealign">
                 <p>
 
-                <p>Full name: @ViewBag.FirstName</p>
-                <p>Gender:  @ViewBag.Gender </p>
-                <p>Height:  @ViewBag.Height</p>
-                <p>Weight:  @ViewBag.Weight</p>
-                <p>Date Of Brith:  @ViewBag.DateOfBIrth</p>
-                <p>Dietary Option: @ViewBag.DietaryOptions</p>
-                <p>Activity:  </p>
-
+                              
                 <!--this is the code for the edit button, this leads the user to the about me page where they can update their profile-->
                 <script>
                     function openWins() {
@@ -75,7 +68,7 @@
 
                 <script>
                     document.getElementById("setGoalsBtn").addEventListener("click", function() {
-                        window.open("../Home/goalSet", "_blank", "width=1000,height=1000");
+                        window.open("../Home/SetGoals", "_blank", "width=400,height=400");
                     });
                 </script>
             </div>

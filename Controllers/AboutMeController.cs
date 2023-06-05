@@ -31,6 +31,16 @@ namespace Capstone_23_Proteine.Controllers
         [HttpPost]
         public async Task<IActionResult> AboutMe(AboutMeViewModel aboutMeRequest)
         {
+
+            ViewData["FirstName"] = aboutMeRequest.FirstName;
+            ViewData["LastName"] = aboutMeRequest.LastName;
+            ViewData["Gender"] = aboutMeRequest.Gender;
+            ViewData["Height"] = aboutMeRequest.Height;
+            ViewData["Weight"] = aboutMeRequest.Weight;
+            ViewData["DateOfBirth"] = aboutMeRequest.DateOfBirth;
+            ViewData["DietaryOptions"] = aboutMeRequest.DietaryOptions;
+            ViewData["UserActivity"] = aboutMeRequest.UserActivity;
+
             var user = await userManager.GetUserAsync(User);
             var userId = user.Id;
 
