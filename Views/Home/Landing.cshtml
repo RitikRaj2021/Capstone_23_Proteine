@@ -1,4 +1,8 @@
-﻿@{
+﻿﻿﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
     ViewData["Title"] = "Landing";
 }
 
@@ -23,7 +27,15 @@
         </p>
         <br>
 
+            @if (SignInManager.IsSignedIn(User))
+        {
+            <button type="button" onclick="location.href= '../Home/Index'" class="btn btn-primary btn-lg" style="font-weight:bold; background-color: #A7BC5B">START FOR FREE</button>
+        }
+        else
+        {
             <button type="button" onclick="location.href= '../Identity/Account/Register'" class="btn btn-primary btn-lg" style="font-weight:bold; background-color: #A7BC5B">START FOR FREE</button>
+
+        }
 
     </div>
 </div>
