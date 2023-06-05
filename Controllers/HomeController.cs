@@ -48,7 +48,7 @@ namespace Capstone_23_Proteine.Controllers
             /*ViewBag.SetCalories = setCalories; // Set the totalCalories value in the ViewBag
             ViewBag.SetProtein = setProtein; // Set the totalProtein value in the ViewBag
             ViewBag.SetFat = setFat; // Set the totalFat value in the ViewBag*/
-
+                        
              return View();
         }
 
