@@ -1,6 +1,5 @@
-﻿@*
+﻿@model Capstone_23_Proteine.Models.SetGoalsViewModel
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
 @{
 }
 <div style="background-color:#FFFF; padding:50px; border-radius:25px;">
@@ -18,7 +17,8 @@
 
 
         <div style="margin-left: 50px;">
-            <form method="post" action="SetGoals" class="mt-5" onsubmit="return validateForm()">
+            <form method="post" asp-controller="SetGoals" asp-action="SetGoals" class="mt-5" onsubmit="return validateForm()">
+
                 <div class="foodIntakeAlign , text-left">                                       
                     
                     <div class="mb-3">

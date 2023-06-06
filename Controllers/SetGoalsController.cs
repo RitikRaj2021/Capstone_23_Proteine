@@ -32,7 +32,8 @@ namespace Capstone_23_Proteine.Controllers
 
         // POST: /SetGoals/SetGoals
         [HttpPost]
-        public async Task<IActionResult> SetGoals(SetGoalsViewModel setGoalsRequest)
+        public async Task<IActionResult> SetGoals([Bind("SetProtein, SetCalories, SetFat")] SetGoalsViewModel setGoalsRequest)
+
         {
             // Retrieve the current user
             var user = await userManager.GetUserAsync(User);
