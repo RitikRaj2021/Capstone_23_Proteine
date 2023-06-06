@@ -3,9 +3,9 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="container text-center border" style="text-align: center; max-inline-size: 1900px; background-color:white;">
-    <div class="row">
-        <div class="col-3 border">
+<div style="text-align: center; max-inline-size: 1900px;">
+    <div class="row" style=" background-color:#ffff; padding:25px; border-radius:45px; box-shadow: 15px 15px 20px rgba(0.05,0.05,0.05,0.05);">
+        <div class="col-3 border" style="border-radius:45px;">
             <div class="row">
                 <img src="/Image/no-image.png" alt="Not Logged In" />
                 <script>
@@ -25,7 +25,13 @@
                 <h1>My Details</h1>
             </div>
             <div class="aboutmealign">
-                <p>
+                <div>
+                    <p>Name: @ViewBag.Firstname @ViewBag.Lastname</p>
+                    <p>Height: @ViewBag.Height CM</p>
+                    <p>Weight: @ViewBag.Weight KG</p>
+                    <p>DietaryOptions: @ViewBag.DietaryOptions</p>
+
+                </div>
 
                               
                 <!--this is the code for the edit button, this leads the user to the about me page where they can update their profile-->
@@ -50,21 +56,25 @@
 
         <div class="col-4">
             <div class="row">
-                <p style="font-size: 50px; text-align: center; margin-inline-start: 115px;"> Daily Summary </p>
-                <p style="font-size: 30px; text-align:left; margin-inline-start:155px; color: #8DA242;">Calories Consumed </p>
-                <p style="font-size: 30px; text-align: center; margin-inline-start: 115px;">@ViewBag.TotalCalories  /@ViewBag.SetCalories </p>
+                <p style="font-size: 40px; text-align: center; margin-inline-start: 115px; color: #8DA242;"> Hello @ViewBag.Firstname!</p>
+                <p style="font-size: 30px; text-align: center; margin-inline-start: 115px;"> This is your Daily Summary </p>
             </div>
-             <div class="row">
-                <p style="font-size: 30px; text-align:left; margin-inline-start:155px; color: #8DA242;">Protein Consumed </p>
-                <p style="font-size: 30px; text-align: center; margin-inline-start: 115px;"> @ViewBag.TotalProtein  /@ViewBag.SetProtein</p>
+
+            <div class="row">
+                <p style="font-size: 25px; text-align:center; margin-inline-start:115px; color: #8DA242;">Nutrients Consumed Today: </p>
+                <p style="font-size: 20px; text-align: center; margin-inline-start: 115px;">Calories @ViewBag.TotalCalories g/@ViewBag.SetCalories g</p>
             </div>
+
              <div class="row">
-                <p style="font-size: 30px; text-align:left; margin-inline-start:155px; color: #8DA242;">Fat Consumed </p>
-                <p style="font-size: 30px; text-align: center; margin-inline-start: 115px;">@ViewBag.TotalFat  /@ViewBag.SetFat</p>
+                <p style="font-size: 20px; text-align: center; margin-inline-start: 115px;"> Protein @ViewBag.TotalProtein g/@ViewBag.SetProtein g</p>
+            </div>
+
+             <div class="row">
+                <p style="font-size: 20px; text-align: center; margin-inline-start: 115px;">Fat @ViewBag.TotalFat g/@ViewBag.SetFat g</p>
             </div>
 
             <div>
-                <button id="setGoalsBtn" style="width: 150px; margin-left: 200px; background-color: green; border-color: green;" type="submit" class="btn btn-primary">Set Goals</button>
+                <button id="setGoalsBtn" style="width: 150px; margin-left: 200px; background-color: #8DA242; border-color: #8DA242;" type="submit" class="btn btn-primary">Set Goals</button>
 
                 <script>
                     document.getElementById("setGoalsBtn").addEventListener("click", function() {
@@ -128,7 +138,7 @@
             }
         </script>
 
-        <div class="col border" style=" margin-inline-start: 200px ;">
+        <div class="col border" style=" margin-inline-start: 200px; border-radius:45px ;">
             <div class="card-group">
                 <div class="card-title">
                     <h5 style="text-align: center; font-size: 30px; color: #8DA242;">More To Know</h5>

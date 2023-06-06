@@ -51,6 +51,16 @@ namespace Capstone_23_Proteine.Controllers
             ViewBag.SetCalories = setGoals?.SetCalories;
             ViewBag.SetFat = setGoals?.SetFat;
 
+            // Retrieve the SetGoals record for the current user
+            var aboutMe = await _context.AboutMe.FirstOrDefaultAsync(g => g.UserId == userId);
+            // Set the SetProtein, SetCalories, and SetFat values in the ViewBag
+            ViewBag.FirstName = aboutMe?.FirstName;
+            ViewBag.LastName = aboutMe?.LastName;
+            ViewBag.Height = aboutMe?.Height;
+            ViewBag.Weight = aboutMe?.Weight;
+            ViewBag.DietaryOptions = aboutMe?.DietaryOptions;
+
+
             int totalCalories = CalculateTotalCalories(); // Calculate the total calories
             int totalProtein = CalculateTotalProtein(); // Calculate the total protein
             int totalFat = CalculateTotalFat(); // Calculate the total fat                    
