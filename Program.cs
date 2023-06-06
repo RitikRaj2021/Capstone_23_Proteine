@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 
+
 public class Program
 {
     public static async Task Main(string[] args)
@@ -53,7 +54,8 @@ public class Program
 
         app.MapControllerRoute(
             name: "default",
-            pattern: "{controller=Home}/{action=Landing}/{id?}");
+
+        pattern: "{controller=Home}/{action= Index}/{id?}");
 
         /*----create Admin accounts----*/
         using (var scope = app.Services.CreateScope())

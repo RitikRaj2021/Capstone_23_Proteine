@@ -34,6 +34,7 @@ namespace Capstone_23_Proteine.Controllers
         // GET: /Home/Index
         public IActionResult Index()
         {
+
             int totalCalories = CalculateTotalCalories(); // Calculate the total calories
             int totalProtein = CalculateTotalProtein(); // Calculate the total protein
             int totalFat = CalculateTotalFat(); // Calculate the total fat          
