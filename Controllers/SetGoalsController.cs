@@ -27,7 +27,7 @@ namespace Capstone_23_Proteine.Controllers
         public IActionResult SetGoals()
         {
             // Render the FoodIntake view
-            return View();
+            return View("Index");
         }
 
         // POST: /SetGoals/SetGoals
@@ -55,7 +55,7 @@ namespace Capstone_23_Proteine.Controllers
             await applicationDbContext.SaveChangesAsync();
 
             // Redirect to the Index action to display the updated food intake records
-            return RedirectToAction("Index");
+            return RedirectToAction();
         }
     }
 }
