@@ -7,46 +7,41 @@
     {
 
 
-        <li class="nav-item">
+        <li class="nav-item hover-text">
             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><font color="#8DA242">Dashboard</font> </a>
         </li>
 
-       
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="MyRecords"> <font color="#FFFFFF">My Records</font></a>
-            <!--
-            <ul class="dropdown">
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="FoodIntake"> <font color="#FFFFFF">FoodIntake</font></a>
-            </ul>-->
+
+        <li class="nav-item hover-text">
+            <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="MyRecords"> <font color="#8DA242">My Records</font></a>
         </li>
 
 
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="FoodIntake"> <font color="#FFFFFF">Food Intake</font></a>
+        <li class="nav-item hover-text">
+            <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="FoodIntake"> <font color="#8DA242">Food Intake</font></a>
         </li>
 
-        <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs"><font color="#FFFFFF">Contact Us</font> </a>
+        <li class="nav-item hover-text">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs"><font color="#8DA242">Contact Us</font> </a>
         </li>
 
 
 
-         <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="FoodIntake"> <font color="#FFFFFF"></font>
+        <li class="nav-item hover-text">
+            <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="FoodIntake"> <font color="#8DA242"></font>
             <img src="~/Image/bell.png" height="35px" width="35px">    
             </a>
         </li>
 
 
-        <li class="nav-item" style="margin-left: 50px">
-            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="" onclick="openAdmin()"><font color="#FFFFFF">|</font> </a>
+        <li class="nav-item hover-text" style="margin-left: 50px">
+            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="" onclick="openAdmin()"><font color="#8DA242">|</font> </a>
         </li>
 
-        <li class="nav-item">
+        <li class="nav-item hover-text">
             <a class="nav-link text-light" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item hover-text">
             <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
                 <button type="submit" class="nav-link btn btn-link text-light buttonsize">Logout</button>
             </form>
@@ -55,20 +50,20 @@
     }
     else
     {
-        <li class="nav-item">
-             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Landing"><font color="#fffff"> Home</font> </a>
+        <li class="nav-item hover-text">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Landing"><font color="#8DA242"> Home</font> </a>
         </li>
-        <li class="nav-item">
-             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs"><font color="#fffff"> About Us</font> </a>
+        <li class="nav-item hover-text">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs"><font color="#8DA242"> About Us</font> </a>
         </li>
-        <li class="nav-item">
-             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs"><font color="#fffff"> Contact Us</font> </a>
+        <li class="nav-item hover-text">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs"><font color="#8DA242"> Contact Us</font> </a>
         </li>
 
-        <li class="nav-item">
+        <li class="nav-item hover-text">
             <a class="nav-link text-light" asp-area="Identity" asp-page="/Account/Register">Register</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item hover-text">
             <a class="nav-link text-light" asp-area="Identity" asp-page="/Account/Login">Login</a>
         </li>
     }
@@ -93,5 +88,75 @@
         font-family: inherit; /* Important for vertical align on mobile phones */
         margin: 0; /* Important for vertical align on mobile phones */
     }
+
+    .hover-text {
+        background-color: #232323; /* Initial color */
+        transition: color 0.3s; /* Transition effect duration */
+    }
+
+        .hover-text:hover {
+            background-color: #FFFFFF ; /* Color on hover */
+        }
+
+
+    #nav {
+        list-style: none inside;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+
+        #nav li {
+            display: block;
+            position: relative;
+            float: left;
+        }
+
+            #nav li a {
+                display: block;
+                text-decoration: none;
+                color: #8DA242;
+                /* list item font color */
+            }
+
+            #nav li li a {
+                font-size: 80%;
+            }
+
+
+        /* smaller font size for sub menu items */
+
+
+        #nav ul {
+            position: absolute;
+            padding: 0;
+            left: 0;
+            display: none;
+            /* hides sublists */
+        }
+
+        #nav li:hover ul ul {
+            display: none;
+        }
+
+
+        /* hides sub-sublists */
+
+        #nav li:hover ul {
+            display: block;
+        }
+
+
+        /* shows sublist on hover */
+
+        #nav li li:hover ul {
+            display: block;
+            /* shows sub-sublist on hover */
+            margin-left: 200px;
+            /* this should be the same width as the parent list item */
+            margin-top: -35px;
+            /* aligns top of sub menu with top of list item */
+        }
 
 </style>
