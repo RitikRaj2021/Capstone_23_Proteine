@@ -60,6 +60,7 @@ namespace Capstone_23_Proteine.Controllers
                 Protein = foodIntakeRequest.Protein,
                 Calories = foodIntakeRequest.Calories,
                 Fat = foodIntakeRequest.Fat,
+                MealType = foodIntakeRequest.MealType,
                 MealName = foodIntakeRequest.MealName,
                 Date = foodIntakeRequest.Date
             };

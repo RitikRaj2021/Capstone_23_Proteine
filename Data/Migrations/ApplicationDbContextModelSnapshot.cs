@@ -87,6 +87,10 @@ namespace Capstone_23_Proteine.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("MealType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Protein")
                         .HasColumnType("int");
 
@@ -355,6 +359,17 @@ namespace Capstone_23_Proteine.Data.Migrations
                 });
 
             modelBuilder.Entity("Capstone_23_Proteine.Models.Domain.SetGoals", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Capstone_23_Proteine.Models.Domain.UserProfile", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
                         .WithMany()
