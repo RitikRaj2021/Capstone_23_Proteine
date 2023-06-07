@@ -25,9 +25,10 @@
                         <!-- This is for the user's gender -->
                         <div>
                             <label for="Gender">Select your Gender:</label>
-                            <select name="Gender" class="form-control" id="Gender" required>
+                            <select name="Gender" class="form-control" id="Gender" requiredz>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
+                                <option value="Prefer not to say">Prefer not to say</option>
                             </select><br>
                         </div>
                         <!-- This is for the user's height -->
@@ -85,12 +86,15 @@
                     // Get values from inputs
                     var firstName = document.getElementById("FirstName").value;
                     var lastName = document.getElementById("LastName").value;
+                    var gender = document.getElementById("Gender").value;
                     var height = document.getElementById("Height").value;
                     var weight = document.getElementById("Weight").value;
                     var dateOfBirth = document.getElementById("DateOfBirth").value;
+                    var dieteryOptions = document.getElementById("DietaryOptions").value;
+                    var userActivity = document.getElementById("UserActivity").value;
 
                     // Makes sure all fields are valid
-                    if (!firstName || !lastName || !height || !weight || !dateOfBirth) {
+                    if (!firstName || !lastName || !height || !weight|| !dieteryOptions) {
                         alert("All fields are required.");
                         return false; // Stops form submit
                     }
