@@ -22,12 +22,8 @@
             <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="FoodIntake"> <font class="hover-text" color="White">Food Intake</font></a>
         </li>
 
-        <li class="nav-item hover-text">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs"><font class="hover-text" color="White">Contact Us</font> </a>
-        </li>
-
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="notificationsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="notificationsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" color="White">
                 Notifications <span class="badge badge-pill badge-danger">@ViewBag.NotificationCount</span>
             </a>
 
@@ -53,7 +49,7 @@
         </li>
 
         <li class="nav-item" style="margin-left: 50px">
-            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="" onclick="openAdmin()"><font color="#FFFFFF">|</font> </a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Admin"><font color="#FFFFFF">|</font> </a>
         </li>
 
         <li class="nav-item">
@@ -77,7 +73,7 @@
         <li class="nav-item hover-text">
             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs"><font class="hover-text" color="White"> Contact Us</font> </a>
         </li>
-
+        
         <li class="nav-item hover-text">
             <a class="nav-link text-light hover-text" asp-area="Identity" asp-page="/Account/Register"><font class="hover-text">Register</font></a>
         </li>
