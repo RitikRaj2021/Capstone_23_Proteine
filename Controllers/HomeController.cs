@@ -43,7 +43,7 @@ namespace Capstone_23_Proteine.Controllers
             if (User.Identity.IsAuthenticated)
             {
                 // Retrieve the current user
-                var user = await _userManager.GetUserAsync(User);
+                var user = _userManager.GetUserAsync(User).Result;
                 var userId = user.Id;
 
                 // Retrieve the SetGoals record for the current user
@@ -75,6 +75,7 @@ namespace Capstone_23_Proteine.Controllers
                 {
                     ViewBag.FatMessage = "Warning: Total fat intake exceeds or equals the set fat goal!";
                 }
+
 
                 if (setGoals?.SetCalories != null && totalCalories >= int.Parse(setGoals.SetCalories))
                 {
@@ -116,8 +117,10 @@ namespace Capstone_23_Proteine.Controllers
         {
             // Logic to calculate the total protein
             DateTime today = DateTime.Today;
+            var user = _userManager.GetUserAsync(User).Result;
+            var userId = user.Id;
             int totalProtein = _context.FoodIntake
-                .Where(f => f.Date.Date == today)
+                .Where(f => f.Date.Date == today && f.UserId == userId)
                 .Sum(f => f.Protein);
             // Return the calculated total protein
             return totalProtein;
@@ -128,26 +131,30 @@ namespace Capstone_23_Proteine.Controllers
         {
             // Logic to calculate the total fat
             DateTime today = DateTime.Today;
+            var user = _userManager.GetUserAsync(User).Result;
+            var userId = user.Id;
             int totalFat = _context.FoodIntake
-                .Where(f => f.Date.Date == today)
+                .Where(f => f.Date.Date == today && f.UserId == userId)
                 .Sum(f => f.Fat);
             // Return the calculated total fat
             return totalFat;
         }
-
 
         // CalculateTotalCalories Function
         private int CalculateTotalCalories()
         {
             // Logic  to calculate the total calories
             DateTime today = DateTime.Today;
+            var user = _userManager.GetUserAsync(User).Result;
+            var userId = user.Id;
             int totalCalories = _context.FoodIntake
-                .Where(f => f.Date.Date == today)
+                .Where(f => f.Date.Date == today && f.UserId == userId)
                 .Sum(f => f.Calories);
             // Return the calculated total calories
             return totalCalories;
         }
-               
+
+
         // GET: /Home/Privacy
         public IActionResult Privacy()
         {
