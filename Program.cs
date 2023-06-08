@@ -1,8 +1,11 @@
 using Capstone_23_Proteine.Data;
 using Capstone_23_Proteine.Services;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
 
 public class Program
 {
@@ -24,7 +27,6 @@ public class Program
 
         builder.Services.AddControllersWithViews();
 
-      
         builder.Services.AddTransient<IEmailSender>(serviceProvider => new EmailSender(sendGridApiKey));
 
         builder.Services.AddCoreAdmin();
@@ -39,7 +41,6 @@ public class Program
         else
         {
             app.UseExceptionHandler("/Home/Error");
-            // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
             app.UseHsts();
         }
 
@@ -50,10 +51,6 @@ public class Program
 
         app.UseAuthentication();
         app.UseAuthorization();
-
-        app.MapControllerRoute(
-            name: "default",
-            pattern: "{controller=Home}/{action=Index}/{id?}");
 
         /*----create Admin accounts----*/
         using (var scope = app.Services.CreateScope())
@@ -67,8 +64,6 @@ public class Program
                 if (!await roleManager.RoleExistsAsync(role))
                     await roleManager.CreateAsync(new IdentityRole(role));
             }
-
-
         }
 
         /*----User----*/
@@ -86,28 +81,36 @@ public class Program
                 var user = new IdentityUser();
                 user.UserName = email;
                 user.Email = email;
-                user.EmailConfirmed= false;
+                user.EmailConfirmed = false;
 
                 /*register user in database*/
                 await userManager.CreateAsync(user, password);
 
                 /*add user to specific role*/
                 await userManager.AddToRoleAsync(user, "Admin");
-
-
             }
-
-
         }
 
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}"
-            );
+                pattern: "{controller=Home}/{action=Index}/{id?}");
         });
 
+        app.Use(async (context, next) =>
+        {
+            var signInManager = context.RequestServices.GetRequiredService<SignInManager<IdentityUser>>();
+
+            if (signInManager.IsSignedIn(context.User))
+            {
+                await next.Invoke();
+            }
+            else
+            {
+                context.Response.Redirect("/Home/Landing");
+            }
+        });
 
         app.MapRazorPages();
 
