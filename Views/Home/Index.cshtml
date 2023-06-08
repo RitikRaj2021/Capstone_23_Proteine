@@ -41,12 +41,7 @@
             </div>
         </div>
 
-
-
-
-
-
-
+        <!--Daily summary below-->
 
         <div class="col-4">
             <div class="row">
@@ -66,6 +61,131 @@
              <div class="row">
                 <p style="font-size: 20px; text-align: center; margin-inline-start: 115px;">Fat @ViewBag.TotalFat g/@ViewBag.SetFat g</p>
             </div>
+        <!--Daily summary Ends-->
+
+
+            <!--Set Goals Starts-->
+            <!-- A button to open the popup form -->
+            <button id="setGoalsBtn" style="width: 150px; margin-left: 200px; background-color: #8DA242; border-color: #8DA242;" type="submit" class="btn btn-primary">Set Goals</button>
+
+
+            <button class=" btn-primary" style="width: 150px; margin-left: 200px; class="open-button" onclick="openForm()">Set Goals</button>
+
+            <!-- The form -->
+            <div class="form-popup" id="myForm">
+                <form method="post" asp-controller="SetGoals" asp-action="SetGoals" class="mt-5" onsubmit="return validateForm()">
+
+                    <div class="foodIntakeAlign , text-left">
+
+                        <div class="mb-3">
+                            <label for="SetProtein" class="form-label">Set Protein Goals (g)</label>
+                            <input type="number" class="form-control" id="SetProtein" name="SetProtein" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="SetCalories" class="form-label">Set Calories Goals (g)</label>
+                            <input type="number" class="form-control" id="SetCalories" name="SetCalories" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="SetFat" class="form-label">Set Fat Goals (g)</label>
+                            <input type="number" class="form-control" id="SetFat" name="SetFat" required>
+                        </div>
+
+                        <div class="submitBTNFI">
+                            <button style="background-color: #A7BC5B; border-color: #A7BC5B;" type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <style>
+                {
+                    box-sizing: border-box;
+                }
+
+                /* Button used to open the contact form - fixed at the bottom of the page */
+                .open-button {
+                    background-color: #555;
+                    color: white;
+                    padding: 16px 20px;
+                    border: none;
+                    cursor: pointer;
+                    opacity: 0.8;
+                    position: fixed;
+                    bottom: 23px;
+                    right: 28px;
+                    width: 280px;
+                }
+
+                /* The popup form - hidden by default */
+                .form-popup {
+                    display: none;
+                    position: fixed;
+                    bottom: 0;
+                    right: 15px;
+                    border: 3px solid #f1f1f1;
+                    background-color:red;
+                    z-index: 9;
+                }
+
+                /* Add styles to the form container */
+                .form-container {
+                    max-width: 300px;
+                    padding: 10px;
+                    background-color: white;
+                }
+
+                    /* Full-width input fields */
+                    .form-container input[type=text], .form-container input[type=password] {
+                        width: 100%;
+                        padding: 15px;
+                        margin: 5px 0 22px 0;
+                        border: none;
+                        background: #f1f1f1;
+                    }
+
+                        /* When the inputs get focus, do something */
+                        .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+                            background-color: #ddd;
+                            outline: none;
+                        }
+
+                    /* Set a style for the submit/login button */
+                    .form-container .btn {
+                        background-color: #04AA6D;
+                        color: white;
+                        padding: 16px 20px;
+                        border: none;
+                        cursor: pointer;
+                        width: 100%;
+                        margin-bottom: 10px;
+                        opacity: 0.8;
+                    }
+
+                    /* Add a red background color to the cancel button */
+                    .form-container .cancel {
+                        background-color: red;
+                    }
+
+                    /* Add some hover effects to buttons */
+                    .form-container .btn:hover, .open-button:hover {
+                        opacity: 1;
+                    }
+
+
+            </style>
+            <script>
+
+                function openForm() {
+                    document.getElementById("myForm").style.display = "block";
+                }
+
+                function closeForm() {
+                    document.getElementById("myForm").style.display = "none";
+                }
+            </script>
+            <!--Set Goals End-->
 
 
             <div>
@@ -78,8 +198,8 @@
                 </script>
             </div>
 
-            <br />
 
+            <br />
             <div class="row" style="text-align: center">
                 <script>
                     function OpenWin() {
