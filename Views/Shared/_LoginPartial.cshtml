@@ -2,6 +2,7 @@
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
+
 <ul id="nav" class="navbar-nav">
     @if (SignInManager.IsSignedIn(User))
     {
@@ -30,13 +31,34 @@
             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs"><font color="#FFFFFF">Contact Us</font> </a>
         </li>
 
-
-
-         <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="FoodIntake"> <font color="#FFFFFF"></font>
-            <img src="~/Image/bell.png" height="35px" width="35px">    
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="notificationsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Notifications <span class="badge badge-pill badge-danger">@ViewBag.NotificationCount</span>
             </a>
+
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="notificationsDropdown">
+                <h6 class="dropdown-header">Alerts</h6>
+                @if (!string.IsNullOrEmpty(ViewBag.FatMessage))
+                {
+                    <a class="dropdown-item" href="#">@ViewBag.FatMessage</a>
+                }
+                @if (!string.IsNullOrEmpty(ViewBag.CaloriesMessage))
+                {
+                    <a class="dropdown-item" href="#">@ViewBag.CaloriesMessage</a>
+                }
+                @if (!string.IsNullOrEmpty(ViewBag.ProteinMessage))
+                {
+                    <a class="dropdown-item" href="#">@ViewBag.ProteinMessage</a>
+                }
+                @if (string.IsNullOrEmpty(ViewBag.FatMessage) && string.IsNullOrEmpty(ViewBag.CaloriesMessage) && string.IsNullOrEmpty(ViewBag.ProteinMessage))
+                {
+                    <a class="dropdown-item" href="#">No new notifications</a>
+                }
+            </div>
         </li>
+
+
+
 
 
         <li class="nav-item" style="margin-left: 50px">
