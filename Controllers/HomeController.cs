@@ -71,6 +71,37 @@ namespace Capstone_23_Proteine.Controllers
                 ViewBag.TotalProtein = totalProtein; // Set the totalProtein value in the ViewBag
                 ViewBag.TotalFat = totalFat; // Set the totalFat value in the ViewBag
 
+                if (setGoals?.SetFat != null && totalFat >= int.Parse(setGoals.SetFat))
+                {
+                    ViewBag.FatMessage = "Warning: Total fat intake exceeds or equals the set fat goal!";
+                }
+
+                if (setGoals?.SetCalories != null && totalCalories >= int.Parse(setGoals.SetCalories))
+                {
+                    ViewBag.CaloriesMessage = "Warning: Total Calories intake exceeds or equals the set fat goal!";
+                }
+
+                if (setGoals?.SetProtein != null && totalProtein >= int.Parse(setGoals.SetProtein))
+                {
+                    ViewBag.ProteinMessage = "Warning: Total Protein intake exceeds or equals the set fat goal!";
+                }
+
+                int notificationCount = 0; // Initialize the count
+                if (!string.IsNullOrEmpty(ViewBag.FatMessage))
+                {
+                    notificationCount++;
+                }
+                if (!string.IsNullOrEmpty(ViewBag.CaloriesMessage))
+                {
+                    notificationCount++;
+                }
+                if (!string.IsNullOrEmpty(ViewBag.ProteinMessage))
+                {
+                    notificationCount++;
+                }
+                ViewBag.NotificationCount = notificationCount; // Set the count in the ViewBag
+
+
                 return View();
             }
 
