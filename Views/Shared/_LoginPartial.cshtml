@@ -8,40 +8,40 @@
 
 
         <li class="nav-item hover-text">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><font color="#8DA242">Dashboard</font> </a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><font class="hover-text" color="White">Dashboard</font> </a>
         </li>
 
 
         <li class="nav-item hover-text">
-            <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="MyRecords"> <font color="#8DA242">My Records</font></a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="MyRecords"> <font class="hover-text" color="White">My Records</font></a>
         </li>
 
 
         <li class="nav-item hover-text">
-            <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="FoodIntake"> <font color="#8DA242">Food Intake</font></a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="FoodIntake"> <font class="hover-text" color="White">Food Intake</font></a>
         </li>
 
         <li class="nav-item hover-text">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs"><font color="#8DA242">Contact Us</font> </a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs"><font class="hover-text" color="White">Contact Us</font> </a>
         </li>
 
 
 
         <li class="nav-item hover-text">
-            <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="FoodIntake"> <font color="#8DA242"></font>
+            <a class="nav-link text-dark" asp-area="" asp-controller="FoodIntake" asp-action="FoodIntake"> <font class="hover-text" color="White"></font>
             <img src="~/Image/bell.png" height="35px" width="35px">    
             </a>
         </li>
 
 
         <li class="nav-item hover-text" style="margin-left: 50px">
-            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="" onclick="openAdmin()"><font color="#8DA242">|</font> </a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="" onclick="openAdmin()"><font class="hover-text" color="White">|</font> </a>
         </li>
 
-        <li class="nav-item hover-text">
+        <li class="nav-item">
             <a class="nav-link text-light" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name</a>
         </li>
-        <li class="nav-item hover-text">
+        <li class="nav-item">
             <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
                 <button type="submit" class="nav-link btn btn-link text-light buttonsize">Logout</button>
             </form>
@@ -51,20 +51,20 @@
     else
     {
         <li class="nav-item hover-text">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Landing"><font color="#8DA242"> Home</font> </a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Landing"><font class="hover-text" color="White"> Home</font> </a>
         </li>
         <li class="nav-item hover-text">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs"><font color="#8DA242"> About Us</font> </a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs"><font class="hover-text" color="White"> About Us</font> </a>
         </li>
         <li class="nav-item hover-text">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs"><font color="#8DA242"> Contact Us</font> </a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs"><font class="hover-text" color="White"> Contact Us</font> </a>
         </li>
 
         <li class="nav-item hover-text">
-            <a class="nav-link text-light" asp-area="Identity" asp-page="/Account/Register">Register</a>
+            <a class="nav-link text-light hover-text" asp-area="Identity" asp-page="/Account/Register"><font class="hover-text">Register</font></a>
         </li>
         <li class="nav-item hover-text">
-            <a class="nav-link text-light" asp-area="Identity" asp-page="/Account/Login">Login</a>
+            <a class="nav-link text-light" asp-area="Identity" asp-page="/Account/Login"><font class="hover-text">Login</font></a>
         </li>
     }
 </ul>
@@ -95,7 +95,7 @@
     }
 
         .hover-text:hover {
-            background-color: #FFFFFF ; /* Color on hover */
+            color: #8DA242; /* Color on hover */
         }
 
 
