@@ -6,29 +6,23 @@
 <div style="text-align: center; max-inline-size: 1900px;">
     <div class="row" style=" background-color:#ffff; padding:25px; border-radius:45px; box-shadow: 15px 15px 20px rgba(0.05,0.05,0.05,0.05);">
         <div class="col-3 border" style="border-radius:45px;">
+           
             <div class="row">
-                <img src="/Image/no-image.png" alt="Not Logged In" />
-                <script>
-                    function OpenWins() {
-                        window.open("Identity/Account/Login");
-                    }
-                </script>
-                <form>
-                    <input type="button" value="Upload Image" onclick="OpenWins()" readonly />
-                </form>
+                <img src="/Image/Profile.png" alt="Not Logged In" />               
             </div>
-            <br />
-            <br />
+            
             <div class="text-center">
                 <!--the tags below are headers for the options that the user chose in the "About Me" page,
                 the information will be imported next to these headers for the user to view-->
                 <h1>My Details</h1>
+                <br />
+              
             </div>
-            <div class="aboutmealign">
+            <div style="text-align:left;">
                 <div>
                     <p>Name: @ViewBag.Firstname @ViewBag.Lastname</p>
-                    <p>Height: @ViewBag.Height CM</p>
-                    <p>Weight: @ViewBag.Weight KG</p>
+                    <p>Height: @ViewBag.Height cm</p>
+                    <p>Weight: @ViewBag.Weight kg</p>
                     <p>DietaryOptions: @ViewBag.DietaryOptions</p>
 
                 </div>
